@@ -1,0 +1,181 @@
+{
+  "id": "teal-fold",
+  "name": "Teal Fold",
+  "version": 1,
+  "engine": 1,
+  "author": "sudharamachandranrajeev",
+  "description": "Deep teal paper under a cream panel folded like origami, a sunken clock and cream badges.",
+  "inspiration": "A sibling of Tangerine Peel: the same layered paper, folded from the other corner in teal and cream.",
+  "requires": [
+    "palette.v1",
+    "depth.shadows",
+    "depth.inner",
+    "decor.peel",
+    "touch.glow",
+    "headings.style",
+    "font.system"
+  ],
+  "prefers": [
+    "widget.well",
+    "icons.badge",
+    "wall.motion"
+  ],
+  "palette": {
+    "light": {
+      "background": "#13615F",
+      "surface": "#F3EDE2",
+      "accent": "#F3EDE2",
+      "secondary": "#0C4644",
+      "ink": "#F3EDE2",
+      "muted": "#A9CFC9",
+      "onSurface": "#1C2B2A",
+      "extras": {
+        "paper": "#F3EDE2",
+        "gold": "#E3B25B"
+      }
+    },
+    "dark": {
+      "background": "#0D4846",
+      "surface": "#E8E1D4",
+      "accent": "#E8E1D4",
+      "secondary": "#082F2E",
+      "ink": "#EDE6DA",
+      "muted": "#94BDB7",
+      "onSurface": "#1C2B2A",
+      "extras": {
+        "paper": "#E8E1D4",
+        "gold": "#D9A54A"
+      }
+    }
+  },
+  "depth": {
+    "corners": 0.9,
+    "card": {
+      "fill": [
+        "#F7F2E9",
+        "#EAE3D6"
+      ],
+      "shadows": [
+        [
+          0,
+          8,
+          18,
+          "#062B2A@0.45"
+        ]
+      ],
+      "rim": {
+        "width": 1,
+        "top": "white@0.7",
+        "bottom": "black@0.08"
+      }
+    },
+    "key": {
+      "fill": [
+        "#F7F2E9",
+        "#E3DBCC"
+      ],
+      "rim": {
+        "width": 1.5,
+        "top": "white",
+        "bottom": "black@0.12"
+      },
+      "shadows": [
+        [
+          0,
+          4,
+          8,
+          "#062B2A@0.55"
+        ]
+      ],
+      "pressInner": [
+        [
+          0,
+          3,
+          6,
+          "#5E5A4E@0.5"
+        ]
+      ]
+    },
+    "field": {
+      "fill": [
+        "#0F5452",
+        "#17716E"
+      ],
+      "inner": [
+        [
+          0,
+          14,
+          28,
+          "#031F1E@0.7"
+        ],
+        [
+          0,
+          -6,
+          14,
+          "#7FCFC6@0.45"
+        ]
+      ]
+    },
+    "primary": {
+      "fill": [
+        "#E3B25B"
+      ],
+      "shadows": [
+        [
+          0,
+          6,
+          14,
+          "#062B2A@0.5"
+        ]
+      ],
+      "rim": {
+        "width": 1,
+        "top": "white@0.4",
+        "bottom": "black@0.2"
+      }
+    }
+  },
+  "headings": {
+    "caps": true,
+    "spacing": 0.06,
+    "font": "system:sans-serif-condensed"
+  },
+  "backdrop": {
+    "kind": "peel"
+  },
+  "decor": {
+    "peel": {
+      "corner": "top-left",
+      "panel": "surface",
+      "paper": "#13615F",
+      "size": 0.28,
+      "band": 0.3
+    }
+  },
+  "touch": {
+    "pulse": "glow"
+  },
+  "icons": {
+    "style": "badge",
+    "badge": "#F3EDE2",
+    "glyph": "background"
+  },
+  "widgets": {
+    "clock": {
+      "style": "well",
+      "numerals": "mixed",
+      "size": 0.78
+    }
+  },
+  "fonts": {
+    "display": "system:sans-serif-thin"
+  },
+  "wallpapers": [
+    {
+      "file": "wallpapers/home.jpg",
+      "for": "any",
+      "dim": 0
+    }
+  ],
+  "preview": "preview.png"
+}

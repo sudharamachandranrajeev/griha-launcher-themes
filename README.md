@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/sudharamachandranrajeev/griha-themes/releases"><img src="https://img.shields.io/github/v/release/sudharamachandranrajeev/griha-themes?include_prereleases&color=8a6512&label=catalogue" alt="Latest catalogue"></a>
-  <img src="https://img.shields.io/badge/for-Griha%200.7%2B-555" alt="For Griha 0.7 and later">
+  <img src="https://img.shields.io/badge/for-Griha%200.6%2B-555" alt="For Griha 0.6 and later">
   <a href="LICENSE"><img src="https://img.shields.io/badge/licence-MIT-2e7d32" alt="Licence MIT"></a>
   <a href="https://github.com/sudharamachandranrajeev/brahma"><img src="https://img.shields.io/badge/part%20of-Brahma-8a5cf6" alt="Part of Brahma"></a>
 </p>
@@ -29,12 +29,18 @@
   <img src="themes/lime-blob/preview.png" width="23%" alt="Lime Blob">
   <img src="themes/tangerine-peel/preview.png" width="23%" alt="Tangerine Peel">
 </p>
+<p align="center">
+  <img src="themes/clay-bloom/preview.png" width="23%" alt="Clay Bloom">
+  <img src="themes/midnight-jelly/preview.png" width="23%" alt="Midnight Jelly">
+  <img src="themes/berry-wave/preview.png" width="23%" alt="Berry Wave">
+  <img src="themes/teal-fold/preview.png" width="23%" alt="Teal Fold">
+</p>
 
 This is the theme catalogue for [Griha](https://github.com/sudharamachandranrajeev/griha-home-launcher).
 A theme here is **data only**: colours, how surfaces are lit, page backgrounds, wallpapers and widget styles.
 It holds no code, so it cannot do anything on your phone except change how Griha looks.
-Status: **early**. Griha's theme engine is still being built; until it ships, each theme's wallpapers can
-already be used in Griha.
+Status: **early**. Griha 0.6 draws each theme's colours, surfaces, page and touch light; widgets such as ring
+gauges and badge icons come with a later engine, and themes gain them when it arrives.
 
 ## 🎨 The themes
 
@@ -44,6 +50,10 @@ already be used in Griha.
 | **Candy Gloss** | Glossy jelly pills that change colour with each state, a coloured glow and chrome dials | [elements](themes/candy-gloss/elements.png) |
 | **Lime Blob** | Charcoal with a lime blob, ring gauges, sideways type and a coloured dot for every app | [elements](themes/lime-blob/elements.png) |
 | **Tangerine Peel** | Orange paper peeling back from a black panel, a deep well holding the clock and black badge icons | [elements](themes/tangerine-peel/elements.png) |
+| **Clay Bloom** | Puffy clay surfaces in lavender, peach and butter with soft inner light | [elements](themes/clay-bloom/elements.png) |
+| **Midnight Jelly** | Neon jelly pills on midnight blue: cyan, magenta and violet gloss with light on the page | [elements](themes/midnight-jelly/elements.png) |
+| **Berry Wave** | Cream paper with a berry-red wave, ink rings and a coloured dot for every app | [elements](themes/berry-wave/elements.png) |
+| **Teal Fold** | Deep teal under a cream panel folded like origami, a sunken clock and cream badges | [elements](themes/teal-fold/elements.png) |
 
 ## 🚀 Get started
 
@@ -54,8 +64,8 @@ already be used in Griha.
 3. In Griha, open **Settings → Look and theme → Wallpapers → Import pictures or ZIP** and pick the file.
 4. Tap the new wallpaper and choose **Griha: home and all apps**.
 
-**Use whole themes** (from Griha 0.7): **Settings → Look and theme → Get more themes**. Griha shows each
-theme with a preview; download, use, update or delete it there. Built-in themes can be hidden.
+**Use whole themes** (from Griha 0.6): **Settings → Look and theme → Themes → Get more themes**. Griha lists
+each theme with its preview; download it, use it, or remove it there.
 
 ## 🧭 How it works
 

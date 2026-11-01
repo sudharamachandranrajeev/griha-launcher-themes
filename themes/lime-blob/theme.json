@@ -2,32 +2,176 @@
   "id": "lime-blob",
   "name": "Lime Blob",
   "version": 1,
-  "engine": 2,
+  "engine": 1,
   "author": "sudharamachandranrajeev",
   "description": "Charcoal with a lime blob flowing from the top, ring gauges, sideways type and a coloured dot for every app.",
   "inspiration": "A dark minimal home: lime liquid shape, circular battery and clock gauges, dot app list, vertical date.",
-  "requires": ["palette.v1", "depth.shadows", "depth.rim", "backdrop.blob", "widget.ring", "icons.dot", "touch.ring", "font.system"],
-  "prefers": ["type.vertical", "wall.motion"],
+  "requires": [
+    "palette.v1",
+    "depth.shadows",
+    "depth.rim",
+    "backdrop.blob",
+    "touch.ring",
+    "headings.style",
+    "font.system"
+  ],
+  "prefers": [
+    "widget.ring",
+    "icons.dot",
+    "type.vertical",
+    "wall.motion"
+  ],
   "palette": {
-    "light": { "background": "#F1F2EC", "surface": "#FFFFFF", "accent": "#5F8F00", "secondary": "#9BD12E", "ink": "#151515", "muted": "#5F625A",
-               "onSurface": "#151515", "extras": { "blob": "#9BD12E" } },
-    "dark":  { "background": "#1A1A1A", "surface": "#1F1F1F", "accent": "#A6DC33", "secondary": "#9BD12E", "ink": "#F2F2F2", "muted": "#9A9A9A",
-               "onSurface": "#F2F2F2", "extras": { "blob": "#9BD12E" } }
+    "light": {
+      "background": "#F1F2EC",
+      "surface": "#FFFFFF",
+      "accent": "#5F8F00",
+      "secondary": "#9BD12E",
+      "ink": "#151515",
+      "muted": "#5F625A",
+      "onSurface": "#151515",
+      "extras": {
+        "blob": "#9BD12E"
+      }
+    },
+    "dark": {
+      "background": "#1A1A1A",
+      "surface": "#1F1F1F",
+      "accent": "#A6DC33",
+      "secondary": "#9BD12E",
+      "ink": "#F2F2F2",
+      "muted": "#9A9A9A",
+      "onSurface": "#F2F2F2",
+      "extras": {
+        "blob": "#9BD12E"
+      }
+    }
   },
   "depth": {
     "corners": 1.6,
-    "card": { "fill": ["#232323", "#1B1B1B"], "rim": { "width": 1.5, "top": "white@0.08", "bottom": "black@0.6" },
-              "shadows": [[0, 10, 24, "black@0.65"]] },
-    "key": { "fill": ["#252525", "#1C1C1C"], "rim": { "width": 1, "top": "white@0.08", "bottom": "black@0.5" }, "shadows": [[0, 4, 10, "black@0.55"]] },
-    "field": { "fill": ["#141414"], "inner": [[0, 2, 6, "black@0.7"]] },
-    "primary": { "fill": ["accent"], "shadows": [[0, 6, 18, "accent@0.4"]], "glow": [[0, 0, 18, "accent@0.55"]] }
+    "card": {
+      "fill": [
+        "#232323",
+        "#1B1B1B"
+      ],
+      "rim": {
+        "width": 1.5,
+        "top": "white@0.08",
+        "bottom": "black@0.6"
+      },
+      "shadows": [
+        [
+          0,
+          10,
+          24,
+          "black@0.65"
+        ]
+      ]
+    },
+    "key": {
+      "fill": [
+        "#252525",
+        "#1C1C1C"
+      ],
+      "rim": {
+        "width": 1,
+        "top": "white@0.08",
+        "bottom": "black@0.5"
+      },
+      "shadows": [
+        [
+          0,
+          4,
+          10,
+          "black@0.55"
+        ]
+      ]
+    },
+    "field": {
+      "fill": [
+        "#141414"
+      ],
+      "inner": [
+        [
+          0,
+          2,
+          6,
+          "black@0.7"
+        ]
+      ]
+    },
+    "primary": {
+      "fill": [
+        "accent"
+      ],
+      "shadows": [
+        [
+          0,
+          6,
+          18,
+          "accent@0.4"
+        ]
+      ],
+      "glow": [
+        [
+          0,
+          0,
+          18,
+          "accent@0.55"
+        ]
+      ]
+    }
   },
-  "headings": { "caps": true, "spacing": 0.16, "font": "system:sans-serif-medium" },
-  "backdrop": { "kind": "blob", "colour": "#9BD12E", "from": "top-right", "reach": 0.38, "drops": 4 },
-  "touch": { "pulse": "ring" },
-  "icons": { "style": "dot", "dots": ["#F7C744", "#4FE0C2", "#6BBF59", "#4F75D6", "#5CC8F2", "#F21F7A", "#B38CF2"] },
-  "widgets": { "battery": "ring", "clock": { "style": "ring", "ticks": "dots" }, "date": "vertical" },
-  "fonts": { "body": "system:sans-serif-light", "display": "system:sans-serif-black" },
-  "wallpapers": [ { "file": "wallpapers/home.jpg", "for": "home", "dim": 0 }, { "file": "wallpapers/drawer.jpg", "for": "drawer", "dim": 0 } ],
+  "headings": {
+    "caps": true,
+    "spacing": 0.16,
+    "font": "system:sans-serif-medium"
+  },
+  "backdrop": {
+    "kind": "blob",
+    "colour": "#9BD12E",
+    "from": "top-right",
+    "reach": 0.38,
+    "drops": 4
+  },
+  "touch": {
+    "pulse": "ring"
+  },
+  "icons": {
+    "style": "dot",
+    "dots": [
+      "#F7C744",
+      "#4FE0C2",
+      "#6BBF59",
+      "#4F75D6",
+      "#5CC8F2",
+      "#F21F7A",
+      "#B38CF2"
+    ]
+  },
+  "widgets": {
+    "battery": "ring",
+    "clock": {
+      "style": "ring",
+      "ticks": "dots"
+    },
+    "date": "vertical"
+  },
+  "fonts": {
+    "body": "system:sans-serif-light",
+    "display": "system:sans-serif-black"
+  },
+  "wallpapers": [
+    {
+      "file": "wallpapers/home.jpg",
+      "for": "home",
+      "dim": 0
+    },
+    {
+      "file": "wallpapers/drawer.jpg",
+      "for": "drawer",
+      "dim": 0
+    }
+  ],
   "preview": "preview.png"
 }

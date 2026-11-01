@@ -1,0 +1,221 @@
+{
+  "id": "clay-bloom",
+  "name": "Clay Bloom",
+  "version": 1,
+  "engine": 1,
+  "author": "sudharamachandranrajeev",
+  "description": "Puffy clay surfaces in lavender, peach and butter: soft inner light, a gentle drop and big round corners.",
+  "inspiration": "A sibling of Pastel Neo: the same soft widgets, pressed from modelling clay instead of paper.",
+  "requires": [
+    "palette.v1",
+    "depth.shadows",
+    "depth.inner",
+    "depth.rim",
+    "backdrop.light",
+    "touch.bloom",
+    "headings.style",
+    "font.system"
+  ],
+  "prefers": [
+    "widget.pill-week",
+    "icons.plate",
+    "wall.motion"
+  ],
+  "palette": {
+    "light": {
+      "background": "#EEE8F7",
+      "surface": "#F6F2FC",
+      "accent": "#7A5CE0",
+      "secondary": "#FFC6A8",
+      "ink": "#241B3A",
+      "muted": "#6A6080",
+      "onSurface": "#241B3A",
+      "extras": {
+        "butter": "#FFE99A",
+        "lavender": "#B9A6F2"
+      }
+    },
+    "dark": {
+      "background": "#1C1828",
+      "surface": "#262136",
+      "accent": "#B9A6F2",
+      "secondary": "#FFB58F",
+      "ink": "#F1ECFA",
+      "muted": "#ABA2C2",
+      "onSurface": "#F1ECFA",
+      "extras": {
+        "butter": "#F6D86B",
+        "lavender": "#8C76E0"
+      }
+    }
+  },
+  "depth": {
+    "corners": 1.5,
+    "card": {
+      "fill": [
+        "#FBF8FF",
+        "#EDE6F8"
+      ],
+      "rim": {
+        "width": 1,
+        "top": "white@0.9",
+        "bottom": "white@0"
+      },
+      "shadows": [
+        [
+          0,
+          14,
+          28,
+          "#7A5CE0@0.18"
+        ],
+        [
+          0,
+          3,
+          6,
+          "#7A5CE0@0.10"
+        ]
+      ],
+      "inner": [
+        [
+          6,
+          8,
+          14,
+          "white@0.85"
+        ],
+        [
+          -7,
+          -9,
+          16,
+          "#9C86D6@0.30"
+        ]
+      ],
+      "pressInner": [
+        [
+          3,
+          4,
+          8,
+          "#9C86D6@0.4"
+        ]
+      ]
+    },
+    "key": {
+      "fill": [
+        "#FBF8FF",
+        "#EDE6F8"
+      ],
+      "shadows": [
+        [
+          0,
+          8,
+          16,
+          "#7A5CE0@0.20"
+        ]
+      ],
+      "inner": [
+        [
+          4,
+          5,
+          9,
+          "white@0.85"
+        ],
+        [
+          -4,
+          -6,
+          10,
+          "#9C86D6@0.30"
+        ]
+      ],
+      "pressInner": [
+        [
+          2,
+          3,
+          6,
+          "#9C86D6@0.45"
+        ]
+      ]
+    },
+    "field": {
+      "fill": [
+        "#E6DEF4",
+        "#EFE9F8"
+      ],
+      "inner": [
+        [
+          3,
+          4,
+          8,
+          "#9C86D6@0.35"
+        ],
+        [
+          -3,
+          -3,
+          6,
+          "white@0.8"
+        ]
+      ]
+    },
+    "primary": {
+      "fill": [
+        "#A58CF5",
+        "accent"
+      ],
+      "shadows": [
+        [
+          0,
+          12,
+          24,
+          "accent@0.40"
+        ]
+      ],
+      "inner": [
+        [
+          5,
+          6,
+          12,
+          "white@0.45"
+        ],
+        [
+          -5,
+          -7,
+          12,
+          "#3E2A9C@0.35"
+        ]
+      ],
+      "pressInner": [
+        [
+          2,
+          3,
+          6,
+          "#3E2A9C@0.5"
+        ]
+      ]
+    }
+  },
+  "headings": {
+    "caps": false,
+    "spacing": 0.01,
+    "font": "system:sans-serif-black"
+  },
+  "backdrop": {
+    "kind": "light",
+    "from": "top-left"
+  },
+  "touch": {
+    "pulse": "bloom"
+  },
+  "icons": {
+    "shape": "squircle",
+    "plate": "surface"
+  },
+  "fonts": {
+    "body": "system:sans-serif-medium"
+  },
+  "wallpapers": [
+    {
+      "file": "wallpapers/home.jpg",
+      "for": "any",
+      "dim": 0
+    }
+  ],
+  "preview": "preview.png"
+}

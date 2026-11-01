@@ -1,0 +1,35 @@
+{
+  "id": "midnight-jelly",
+  "name": "Midnight Jelly",
+  "version": 1,
+  "engine": 1,
+  "author": "sudharamachandranrajeev",
+  "description": "Neon jelly pills on midnight blue: cyan, magenta and violet gloss with light spilling onto the page.",
+  "inspiration": "A sibling of Candy Gloss: the same glossy states after dark.",
+  "requires": ["palette.v1", "depth.shadows", "depth.rim", "depth.gloss", "depth.glow", "backdrop.haze", "touch.glow", "font.system"],
+  "prefers": ["depth.flare", "state.colours", "wall.motion"],
+  "palette": {
+    "light": { "background": "#E8EAF6", "surface": "#F7F8FD", "accent": "#7C3AED", "secondary": "#22D3EE", "ink": "#12122A", "muted": "#5B5C7A",
+               "onSurface": "#12122A", "extras": { "magenta": "#E0338E", "cyan": "#0EA5C6" } },
+    "dark":  { "background": "#0B1020", "surface": "#141A30", "accent": "#A78BFA", "secondary": "#22D3EE", "ink": "#EEF0FF", "muted": "#9AA0C4",
+               "onSurface": "#EEF0FF", "extras": { "magenta": "#F43F9E", "cyan": "#22D3EE" } }
+  },
+  "states": { "default": "accent", "hover": "#F43F9E", "focus": "#22D3EE", "pressed": "surface", "busy": "#F43F9E", "done": "#2A3150" },
+  "depth": {
+    "corners": 1.25,
+    "card": { "fill": ["#1A2140@0.9", "#111731@0.85"], "rim": { "width": 1, "top": "white@0.18", "bottom": "accent@0.35" },
+              "shadows": [[0, 12, 28, "black@0.55"]], "glow": [[0, 0, 22, "accent@0.45"]] },
+    "key": { "fill": ["#26305A", "#151B36"], "rim": { "width": 1.5, "top": "white@0.30", "bottom": "black@0.5" }, "gloss": 0.35,
+             "shadows": [[0, 6, 14, "black@0.6"]], "glow": [[0, 0, 18, "secondary@0.55"]], "pressInner": [[0, 3, 6, "black@0.6"]] },
+    "field": { "fill": ["#0E1328", "#151B36"], "inner": [[0, 2, 6, "black@0.7"]], "rim": { "width": 1, "top": "black@0.5", "bottom": "white@0.08" } },
+    "primary": { "fill": ["#C4B0FF", "accent", "#6D28D9"], "rim": { "width": 1.5, "top": "white@0.7", "bottom": "#4C1D95" },
+                 "gloss": 0.7, "shadows": [[0, 10, 22, "accent@0.6"]], "glow": [[0, 0, 28, "accent@0.7"], [0, 0, 6, "white@0.5", 1]] }
+  },
+  "headings": { "caps": false, "spacing": 0, "font": "system:sans-serif-medium" },
+  "backdrop": { "kind": "haze", "tints": ["#7C3AED", "#F43F9E", "#22D3EE"] },
+  "touch": { "pulse": "glow" },
+  "icons": { "shape": "squircle", "plate": "none" },
+  "fonts": { "body": "system:sans-serif" },
+  "wallpapers": [ { "file": "wallpapers/home.jpg", "for": "any", "dim": 0.05 } ],
+  "preview": "preview.png"
+}
