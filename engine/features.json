@@ -3,7 +3,7 @@
   "engines": {
     "1": {
       "griha": "0.6.0",
-      "status": "planned",
+      "status": "released",
       "features": [
         "palette.v1",
         "depth.shadows",
@@ -34,7 +34,7 @@
     },
     "2": {
       "griha": "0.6.0",
-      "status": "planned",
+      "status": "released",
       "features": [
         "home.blocks",
         "widget.ring",
