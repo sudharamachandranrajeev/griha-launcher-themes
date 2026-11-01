@@ -1,7 +1,7 @@
 {
   "id": "clay-bloom",
   "name": "Clay Bloom",
-  "version": 3,
+  "version": 4,
   "engine": 2,
   "author": "sudharamachandranrajeev",
   "description": "Puffy clay surfaces in lavender, peach and butter: soft inner light, a gentle drop and big round corners.",
@@ -19,6 +19,7 @@
   ],
   "prefers": [
     "icons.plate",
+    "lock.clock",
     "lock.subject",
     "lock.theme",
     "wall.motion",

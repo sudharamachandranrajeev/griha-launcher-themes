@@ -1,7 +1,7 @@
 {
   "id": "candy-gloss",
   "name": "Candy Gloss",
-  "version": 3,
+  "version": 4,
   "engine": 2,
   "author": "sudharamachandranrajeev",
   "description": "Glossy jelly pills that change colour with every state, a coloured glow underneath and chrome dials at the edges.",
@@ -20,6 +20,7 @@
   ],
   "prefers": [
     "depth.flare",
+    "lock.clock",
     "lock.subject",
     "lock.theme",
     "wall.motion"

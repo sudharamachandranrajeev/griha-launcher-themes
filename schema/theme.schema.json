@@ -276,6 +276,54 @@
             "serif",
             "script"
           ]
+        },
+        "clock": {
+          "description": "The clock piece for the lock screen (lock.clock, Griha 0.8.0+): a home block or a list of them, drawn in its date edition. Without it, the first clock on the theme's home is used.",
+          "oneOf": [
+            {
+              "type": "object",
+              "required": [
+                "type"
+              ],
+              "properties": {
+                "type": {
+                  "enum": [
+                    "clockCard",
+                    "well",
+                    "rings",
+                    "headline",
+                    "panel",
+                    "stats",
+                    "infoKeys",
+                    "week"
+                  ]
+                }
+              }
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "type"
+                ],
+                "properties": {
+                  "type": {
+                    "enum": [
+                      "clockCard",
+                      "well",
+                      "rings",
+                      "headline",
+                      "panel",
+                      "stats",
+                      "infoKeys",
+                      "week"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
         }
       }
     }
