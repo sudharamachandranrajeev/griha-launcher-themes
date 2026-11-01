@@ -1,23 +1,24 @@
 {
   "id": "tangerine-peel",
   "name": "Tangerine Peel",
-  "version": 3,
-  "engine": 1,
+  "version": 4,
+  "engine": 2,
   "author": "sudharamachandranrajeev",
   "description": "Orange paper under a cream panel peeling back to show black, cream cards, a deep clock well and black badge icons.",
   "inspiration": "An orange home with a curled page corner, an inset analog clock and round black icons.",
   "requires": [
-    "palette.v1",
-    "depth.shadows",
-    "depth.inner",
     "decor.peel",
-    "touch.glow",
+    "depth.inner",
+    "depth.shadows",
+    "font.system",
     "headings.style",
-    "font.system"
+    "home.blocks",
+    "icons.badge",
+    "palette.v1",
+    "touch.glow",
+    "widget.well"
   ],
   "prefers": [
-    "widget.well",
-    "icons.badge",
     "font.bundled",
     "wall.motion"
   ],
@@ -180,5 +181,21 @@
       "dim": 0
     }
   ],
-  "preview": "preview.png"
+  "preview": "preview.png",
+  "home": [
+    {
+      "type": "panel",
+      "gap": 6
+    },
+    {
+      "type": "well",
+      "gap": 96
+    },
+    {
+      "type": "dock",
+      "style": "badges",
+      "count": 6,
+      "gap": 34
+    }
+  ]
 }

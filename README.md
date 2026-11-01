@@ -33,27 +33,28 @@
   <img src="themes/clay-bloom/preview.png" width="23%" alt="Clay Bloom">
   <img src="themes/midnight-jelly/preview.png" width="23%" alt="Midnight Jelly">
   <img src="themes/berry-wave/preview.png" width="23%" alt="Berry Wave">
-  <img src="themes/teal-fold/preview.png" width="23%" alt="Teal Fold">
+  <img src="themes/teal-grid/preview.png" width="23%" alt="Teal Grid">
 </p>
 
 This is the theme catalogue for [Griha](https://github.com/sudharamachandranrajeev/griha-home-launcher).
 A theme here is **data only**: colours, how surfaces are lit, page backgrounds, wallpapers and widget styles.
 It holds no code, so it cannot do anything on your phone except change how Griha looks.
-Status: **early**. Griha 0.6 draws each theme's colours, surfaces, page and touch light; widgets such as ring
-gauges and badge icons come with a later engine, and themes gain them when it arrives.
+Status: **early**. Griha 0.6 draws each theme's colours, surfaces, page, touch light and its own home layout.
 
 ## 🎨 The themes
 
 | Theme | Look | Elements |
 | --- | --- | --- |
-| **Pastel Neo** | Soft grey neumorphism with coral and mint, chunky type and bold black outlines on pills and chips | [elements](themes/pastel-neo/elements.png) |
-| **Candy Gloss** | Glossy jelly pills that change colour with each state, a coloured glow and chrome dials | [elements](themes/candy-gloss/elements.png) |
-| **Lime Blob** | Charcoal with a lime blob, ring gauges, sideways type and a coloured dot for every app | [elements](themes/lime-blob/elements.png) |
-| **Tangerine Peel** | Orange paper peeling back from a black panel, a deep well holding the clock and black badge icons | [elements](themes/tangerine-peel/elements.png) |
-| **Clay Bloom** | Puffy clay surfaces in lavender, peach and butter with soft inner light | [elements](themes/clay-bloom/elements.png) |
-| **Midnight Jelly** | Neon jelly pills on midnight blue: cyan, magenta and violet gloss with light on the page | [elements](themes/midnight-jelly/elements.png) |
-| **Berry Wave** | Cream paper with a berry-red wave, ink rings and a coloured dot for every app | [elements](themes/berry-wave/elements.png) |
-| **Teal Fold** | Deep teal under a cream panel folded like origami, a sunken clock and cream badges | [elements](themes/teal-fold/elements.png) |
+| **Pastel Neo** | Soft grey neumorphism: a chunky clock card with a week pill, tall Power and Music meters, wide app cards, bold outlines | [elements](themes/pastel-neo/elements.png) |
+| **Candy Gloss** | A frosted clock over chrome dials, then glossy jelly pills that change colour by state, and a jelly dock | [elements](themes/candy-gloss/elements.png) |
+| **Lime Blob** | Charcoal with a lime blob: a battery ring, a dotted clock ring, a dot list of apps and a sideways motto | [elements](themes/lime-blob/elements.png) |
+| **Tangerine Peel** | Orange under a peeling cream panel: an info panel, a deep well clock and black badge icons | [elements](themes/tangerine-peel/elements.png) |
+| **Clay Bloom** | Puffy clay cards after the soft system board: clock, profile, battery and note cards, tiles and a bottom bar | [elements](themes/clay-bloom/elements.png) |
+| **Midnight Jelly** | A dark dashboard after the neo-skeuomorphic board: segmented tabs, stat cards, a chevron list, toasts and glowing steps | [elements](themes/midnight-jelly/elements.png) |
+| **Berry Wave** | Tactile pill keys for everything, time and battery included, over a berry wave | [elements](themes/berry-wave/elements.png) |
+| **Teal Grid** | A teal product styleguide: headline time, chips, underline tabs, a status card, alert banners and tiles | [elements](themes/teal-grid/elements.png) |
+
+Each theme brings its own home layout as well as its colours; Griha 0.6 builds it from the theme's `home` blocks.
 
 ## 🚀 Get started
 

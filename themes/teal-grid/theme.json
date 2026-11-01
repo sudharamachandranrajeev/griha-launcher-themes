@@ -1,24 +1,25 @@
 {
-  "id": "teal-fold",
-  "name": "Teal Fold",
-  "version": 3,
-  "engine": 1,
+  "id": "teal-grid",
+  "name": "Teal Grid",
+  "version": 1,
+  "engine": 2,
   "author": "sudharamachandranrajeev",
-  "description": "Teal paper under a deep teal panel folded like origami to show cream, a sunken clock and cream badges.",
-  "inspiration": "A sibling of Tangerine Peel: the same layered paper, folded from the other corner in teal and cream.",
+  "description": "A product styleguide in teal and cream: headline time, chips, underline tabs, a status card and alert banners on a fine column grid.",
+  "inspiration": "The product UI styleguide board: headlines, chips, tabs, cards and alerts, set in teal.",
   "requires": [
-    "palette.v1",
-    "depth.shadows",
+    "backdrop.grid",
     "depth.inner",
-    "decor.peel",
-    "touch.glow",
+    "depth.shadows",
+    "font.system",
     "headings.style",
-    "font.system"
+    "home.blocks",
+    "palette.v1",
+    "touch.glow"
   ],
   "prefers": [
-    "widget.well",
     "icons.badge",
-    "wall.motion"
+    "wall.motion",
+    "widget.well"
   ],
   "palette": {
     "light": {
@@ -49,7 +50,7 @@
     }
   },
   "depth": {
-    "corners": 0.9,
+    "corners": 0.6,
     "card": {
       "fill": [
         "#136664",
@@ -141,15 +142,7 @@
     "font": "system:sans-serif-condensed"
   },
   "backdrop": {
-    "kind": "peel"
-  },
-  "decor": {
-    "peel": {
-      "corner": "top-left",
-      "panel": "#0A3F3D",
-      "paper": "#F3EDE2",
-      "band": 0.385
-    }
+    "kind": "grid"
   },
   "touch": {
     "pulse": "glow"
@@ -176,5 +169,31 @@
       "dim": 0
     }
   ],
-  "preview": "preview.png"
+  "preview": "preview.png",
+  "home": [
+    {
+      "type": "headline",
+      "gap": 4
+    },
+    {
+      "type": "chips"
+    },
+    {
+      "type": "tabs",
+      "style": "underline",
+      "gap": 18
+    },
+    {
+      "type": "status"
+    },
+    {
+      "type": "alerts"
+    },
+    {
+      "type": "apps",
+      "style": "tiles",
+      "columns": 4,
+      "count": 8
+    }
+  ]
 }

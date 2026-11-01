@@ -33,17 +33,25 @@
       ]
     },
     "2": {
+      "griha": "0.6.0",
+      "status": "planned",
+      "features": [
+        "home.blocks",
+        "widget.ring",
+        "widget.well",
+        "widget.pill-week",
+        "widget.meters",
+        "type.vertical",
+        "icons.dot",
+        "icons.badge",
+        "state.colours"
+      ]
+    },
+    "3": {
       "griha": "0.7.0",
       "status": "planned",
       "features": [
         "depth.flare",
-        "state.colours",
-        "widget.ring",
-        "widget.well",
-        "widget.pill-week",
-        "type.vertical",
-        "icons.dot",
-        "icons.badge",
         "icons.shape",
         "icons.plate",
         "icons.mono",
@@ -88,6 +96,8 @@
     "icons.dot": "A coloured dot instead of an icon, from the theme's dot colours.",
     "icons.badge": "Mono icons on a solid round badge.",
     "font.system": "Android's own font families, such as sans-serif-black.",
-    "font.bundled": "Fonts shipped inside a theme package."
+    "font.bundled": "Fonts shipped inside a theme package.",
+    "home.blocks": "The theme's own home: a list of blocks (clock cards, gauges, panels, app styles, docks, bars) laid out top to bottom.",
+    "widget.meters": "Tall outlined meters for battery and music volume."
   }
 }

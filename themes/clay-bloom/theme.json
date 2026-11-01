@@ -1,25 +1,26 @@
 {
   "id": "clay-bloom",
   "name": "Clay Bloom",
-  "version": 1,
-  "engine": 1,
+  "version": 2,
+  "engine": 2,
   "author": "sudharamachandranrajeev",
   "description": "Puffy clay surfaces in lavender, peach and butter: soft inner light, a gentle drop and big round corners.",
   "inspiration": "A sibling of Pastel Neo: the same soft widgets, pressed from modelling clay instead of paper.",
   "requires": [
-    "palette.v1",
-    "depth.shadows",
+    "backdrop.light",
     "depth.inner",
     "depth.rim",
-    "backdrop.light",
-    "touch.bloom",
+    "depth.shadows",
+    "font.system",
     "headings.style",
-    "font.system"
+    "home.blocks",
+    "palette.v1",
+    "touch.bloom"
   ],
   "prefers": [
-    "widget.pill-week",
     "icons.plate",
-    "wall.motion"
+    "wall.motion",
+    "widget.pill-week"
   ],
   "palette": {
     "light": {
@@ -217,5 +218,31 @@
       "dim": 0
     }
   ],
-  "preview": "preview.png"
+  "preview": "preview.png",
+  "home": [
+    {
+      "type": "clockCard",
+      "style": "clay",
+      "gap": 4
+    },
+    {
+      "type": "profile"
+    },
+    {
+      "type": "battery"
+    },
+    {
+      "type": "note"
+    },
+    {
+      "type": "apps",
+      "style": "tiles",
+      "columns": 3,
+      "count": 3
+    },
+    {
+      "type": "nav",
+      "gap": 18
+    }
+  ]
 }

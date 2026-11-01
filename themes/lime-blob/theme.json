@@ -1,24 +1,25 @@
 {
   "id": "lime-blob",
   "name": "Lime Blob",
-  "version": 1,
-  "engine": 1,
+  "version": 2,
+  "engine": 2,
   "author": "sudharamachandranrajeev",
   "description": "Charcoal with a lime blob flowing from the top, ring gauges, sideways type and a coloured dot for every app.",
   "inspiration": "A dark minimal home: lime liquid shape, circular battery and clock gauges, dot app list, vertical date.",
   "requires": [
-    "palette.v1",
-    "depth.shadows",
-    "depth.rim",
     "backdrop.blob",
-    "touch.ring",
+    "depth.rim",
+    "depth.shadows",
+    "font.system",
     "headings.style",
-    "font.system"
+    "home.blocks",
+    "icons.dot",
+    "palette.v1",
+    "touch.ring",
+    "type.vertical",
+    "widget.ring"
   ],
   "prefers": [
-    "widget.ring",
-    "icons.dot",
-    "type.vertical",
     "wall.motion"
   ],
   "palette": {
@@ -173,5 +174,31 @@
       "dim": 0
     }
   ],
-  "preview": "preview.png"
+  "preview": "preview.png",
+  "home": [
+    {
+      "type": "rings",
+      "gap": 0
+    },
+    {
+      "type": "row",
+      "align": "top",
+      "weights": [
+        1.3,
+        1
+      ],
+      "items": [
+        {
+          "type": "apps",
+          "style": "dots",
+          "count": 7
+        },
+        {
+          "type": "motto",
+          "word": "home",
+          "mark": ";"
+        }
+      ]
+    }
+  ]
 }

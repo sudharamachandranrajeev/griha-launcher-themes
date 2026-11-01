@@ -1,23 +1,25 @@
 {
   "id": "pastel-neo",
   "name": "Pastel Neo",
-  "version": 2,
-  "engine": 1,
+  "version": 3,
+  "engine": 2,
   "author": "sudharamachandranrajeev",
   "description": "Soft grey neumorphism with coral and mint, chunky type and bold black outlines on pills and chips.",
   "inspiration": "A neumorphism home screen board: raised soft cards, pastel pills with thick ink outlines.",
   "requires": [
-    "palette.v1",
-    "depth.shadows",
+    "backdrop.plain",
     "depth.inner",
     "depth.outline",
-    "backdrop.plain",
-    "touch.bloom",
+    "depth.shadows",
+    "font.system",
     "headings.style",
-    "font.system"
+    "home.blocks",
+    "palette.v1",
+    "touch.bloom",
+    "widget.meters",
+    "widget.pill-week"
   ],
   "prefers": [
-    "widget.pill-week",
     "icons.plate",
     "wall.motion"
   ],
@@ -205,5 +207,53 @@
       "dim": 0
     }
   ],
-  "preview": "preview.png"
+  "preview": "preview.png",
+  "home": [
+    {
+      "type": "clockCard",
+      "style": "chunky",
+      "week": true,
+      "gap": 4
+    },
+    {
+      "type": "row",
+      "align": "top",
+      "weights": [
+        1,
+        1.15
+      ],
+      "items": [
+        {
+          "type": "meters",
+          "height": 226
+        },
+        {
+          "type": "stack",
+          "items": [
+            {
+              "type": "apps",
+              "style": "tiles",
+              "columns": 2,
+              "count": 2,
+              "gap": 0
+            },
+            {
+              "type": "apps",
+              "style": "wide",
+              "columns": 1,
+              "skip": 2,
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "apps",
+      "style": "wide",
+      "columns": 2,
+      "skip": 3,
+      "count": 4
+    }
+  ]
 }

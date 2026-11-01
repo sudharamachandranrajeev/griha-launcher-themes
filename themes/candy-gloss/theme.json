@@ -1,24 +1,25 @@
 {
   "id": "candy-gloss",
   "name": "Candy Gloss",
-  "version": 1,
-  "engine": 1,
+  "version": 2,
+  "engine": 2,
   "author": "sudharamachandranrajeev",
   "description": "Glossy jelly pills that change colour with every state, a coloured glow underneath and chrome dials at the edges.",
   "inspiration": "A button states board: default, hover, focus, pressed, busy and done as glossy pills with light flares.",
   "requires": [
-    "palette.v1",
-    "depth.shadows",
-    "depth.rim",
+    "backdrop.chrome",
     "depth.gloss",
     "depth.glow",
-    "backdrop.chrome",
-    "touch.glow",
-    "font.system"
+    "depth.rim",
+    "depth.shadows",
+    "font.system",
+    "home.blocks",
+    "palette.v1",
+    "state.colours",
+    "touch.glow"
   ],
   "prefers": [
     "depth.flare",
-    "state.colours",
     "wall.motion"
   ],
   "palette": {
@@ -199,5 +200,23 @@
       "dim": 0.05
     }
   ],
-  "preview": "preview.png"
+  "preview": "preview.png",
+  "home": [
+    {
+      "type": "clockCard",
+      "style": "glass",
+      "gap": 4
+    },
+    {
+      "type": "apps",
+      "style": "pills",
+      "count": 6
+    },
+    {
+      "type": "dock",
+      "style": "jelly",
+      "count": 4,
+      "gap": 22
+    }
+  ]
 }

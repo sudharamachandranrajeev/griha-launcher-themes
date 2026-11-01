@@ -1,33 +1,195 @@
 {
   "id": "berry-wave",
   "name": "Berry Wave",
-  "version": 1,
-  "engine": 1,
+  "version": 2,
+  "engine": 2,
   "author": "sudharamachandranrajeev",
   "description": "Cream paper with a berry-red wave rising from the bottom left, ink-dark rings and a coloured dot for every app.",
   "inspiration": "A sibling of Lime Blob: the same flowing shape and rings, by daylight.",
-  "requires": ["palette.v1", "depth.shadows", "depth.rim", "backdrop.blob", "touch.ring", "headings.style", "font.system"],
-  "prefers": ["widget.ring", "icons.dot", "type.vertical", "wall.motion"],
+  "requires": [
+    "backdrop.blob",
+    "depth.rim",
+    "depth.shadows",
+    "font.system",
+    "headings.style",
+    "home.blocks",
+    "palette.v1",
+    "touch.ring"
+  ],
+  "prefers": [
+    "icons.dot",
+    "type.vertical",
+    "wall.motion",
+    "widget.ring"
+  ],
   "palette": {
-    "light": { "background": "#F6F1EA", "surface": "#FFFDF9", "accent": "#C21E5F", "secondary": "#D9246E", "ink": "#1B1420", "muted": "#6E6370",
-               "onSurface": "#1B1420", "extras": { "blob": "#D9246E" } },
-    "dark":  { "background": "#1B1418", "surface": "#251C21", "accent": "#F25C95", "secondary": "#D9246E", "ink": "#F8EEF2", "muted": "#B4A4AC",
-               "onSurface": "#F8EEF2", "extras": { "blob": "#B81D5C" } }
+    "light": {
+      "background": "#F6F1EA",
+      "surface": "#FFFDF9",
+      "accent": "#C21E5F",
+      "secondary": "#D9246E",
+      "ink": "#1B1420",
+      "muted": "#6E6370",
+      "onSurface": "#1B1420",
+      "extras": {
+        "blob": "#D9246E"
+      }
+    },
+    "dark": {
+      "background": "#1B1418",
+      "surface": "#251C21",
+      "accent": "#F25C95",
+      "secondary": "#D9246E",
+      "ink": "#F8EEF2",
+      "muted": "#B4A4AC",
+      "onSurface": "#F8EEF2",
+      "extras": {
+        "blob": "#B81D5C"
+      }
+    }
   },
   "depth": {
     "corners": 1.6,
-    "card": { "fill": ["#FFFFFF", "#FBF6F0"], "rim": { "width": 1, "top": "white", "bottom": "black@0.05" },
-              "shadows": [[0, 10, 24, "#5A2A3A@0.16"], [0, 1, 2, "black@0.06"]] },
-    "key": { "fill": ["#FFFFFF", "#F7F1EA"], "rim": { "width": 1, "top": "white", "bottom": "black@0.06" }, "shadows": [[0, 4, 10, "#5A2A3A@0.18"]] },
-    "field": { "fill": ["#EFE7DD"], "inner": [[0, 2, 5, "#5A2A3A@0.15"]] },
-    "primary": { "fill": ["accent"], "shadows": [[0, 6, 18, "accent@0.35"]], "glow": [[0, 0, 16, "accent@0.4"]] }
+    "card": {
+      "fill": [
+        "#FFFFFF",
+        "#FBF6F0"
+      ],
+      "rim": {
+        "width": 1,
+        "top": "white",
+        "bottom": "black@0.05"
+      },
+      "shadows": [
+        [
+          0,
+          10,
+          24,
+          "#5A2A3A@0.16"
+        ],
+        [
+          0,
+          1,
+          2,
+          "black@0.06"
+        ]
+      ]
+    },
+    "key": {
+      "fill": [
+        "#FFFFFF",
+        "#F7F1EA"
+      ],
+      "rim": {
+        "width": 1,
+        "top": "white",
+        "bottom": "black@0.06"
+      },
+      "shadows": [
+        [
+          0,
+          4,
+          10,
+          "#5A2A3A@0.18"
+        ]
+      ]
+    },
+    "field": {
+      "fill": [
+        "#EFE7DD"
+      ],
+      "inner": [
+        [
+          0,
+          2,
+          5,
+          "#5A2A3A@0.15"
+        ]
+      ]
+    },
+    "primary": {
+      "fill": [
+        "accent"
+      ],
+      "shadows": [
+        [
+          0,
+          6,
+          18,
+          "accent@0.35"
+        ]
+      ],
+      "glow": [
+        [
+          0,
+          0,
+          16,
+          "accent@0.4"
+        ]
+      ]
+    }
   },
-  "headings": { "caps": true, "spacing": 0.16, "font": "system:sans-serif-medium" },
-  "backdrop": { "kind": "blob", "colour": "#D9246E", "from": "bottom-left", "reach": 0.36, "drops": 3 },
-  "touch": { "pulse": "ring" },
-  "icons": { "style": "dot", "dots": ["#D9246E", "#F2A541", "#3BA99C", "#4361EE", "#7B2CBF", "#1B1420"] },
-  "widgets": { "battery": "ring", "clock": { "style": "ring", "ticks": "dots" }, "date": "vertical" },
-  "fonts": { "body": "system:sans-serif-light", "display": "system:sans-serif-black" },
-  "wallpapers": [ { "file": "wallpapers/home.jpg", "for": "any", "dim": 0 } ],
-  "preview": "preview.png"
+  "headings": {
+    "caps": true,
+    "spacing": 0.16,
+    "font": "system:sans-serif-medium"
+  },
+  "backdrop": {
+    "kind": "blob",
+    "colour": "#D9246E",
+    "from": "bottom-left",
+    "reach": 0.36,
+    "drops": 3
+  },
+  "touch": {
+    "pulse": "ring"
+  },
+  "icons": {
+    "style": "dot",
+    "dots": [
+      "#D9246E",
+      "#F2A541",
+      "#3BA99C",
+      "#4361EE",
+      "#7B2CBF",
+      "#1B1420"
+    ]
+  },
+  "widgets": {
+    "battery": "ring",
+    "clock": {
+      "style": "ring",
+      "ticks": "dots"
+    },
+    "date": "vertical"
+  },
+  "fonts": {
+    "body": "system:sans-serif-light",
+    "display": "system:sans-serif-black"
+  },
+  "wallpapers": [
+    {
+      "file": "wallpapers/home.jpg",
+      "for": "any",
+      "dim": 0
+    }
+  ],
+  "preview": "preview.png",
+  "home": [
+    {
+      "type": "infoKeys",
+      "gap": 4
+    },
+    {
+      "type": "label",
+      "text": "Your apps",
+      "gap": 24
+    },
+    {
+      "type": "apps",
+      "style": "pillKeys",
+      "count": 8,
+      "gap": 10
+    }
+  ]
 }

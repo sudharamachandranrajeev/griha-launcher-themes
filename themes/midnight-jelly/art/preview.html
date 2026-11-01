@@ -1,23 +1,31 @@
 <!doctype html><html><head><meta charset="utf-8"><meta name="out" content="preview.png,360,780,3,png">
 <link rel="stylesheet" href="style.css"><script src="../../../tools/art/common.js"></script><style>
 html,body{width:360px;height:780px;overflow:hidden;background:url(../wallpapers/home.jpg) center/cover}
-.wrap{padding:52px 22px}.app{height:54px;font-size:17px;padding:0 20px;margin-top:14px}.app .ico{width:24px;height:24px}
-.dock{position:absolute;left:22px;right:22px;bottom:30px;height:80px;display:flex;justify-content:space-around;align-items:center}
-.dock .jelly{width:54px;height:54px;justify-content:center}.dock .ico{width:24px;height:24px}
+.wrap{padding:44px 18px 0}
+.tabs{display:flex;padding:6px;margin-bottom:14px}.tabs div{flex:1;text-align:center;padding:10px 0;font-weight:700;font-size:14px;color:var(--muted)}
+.stat{flex:1;padding:12px 14px}.stat small{font-size:10px;letter-spacing:.12em;color:var(--muted);font-weight:700}.stat b{display:block;font-size:22px;margin-top:2px}
+.row{display:flex;align-items:center;gap:14px;padding:0 14px;height:54px}.row .ic{width:36px;height:36px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#0E1328;box-shadow:inset 0 2px 5px rgba(0,0,0,.7)}
+.row .ico{width:20px;height:20px}.row small{display:block;font-size:11px;color:var(--muted)}
+.toast{display:flex;align-items:center;gap:12px;height:44px;padding:0 14px;border-radius:14px;margin-top:8px;font-size:13px}
+.dock{display:flex;align-items:center;justify-content:center;margin-top:18px}.dock .s{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.dock .line{height:2px;width:20px;background:rgba(167,139,250,.5)}.dock .ico{width:22px;height:22px}
 </style></head><body><div class="wrap">
- <div class="glass" style="padding:20px 22px"><div style="display:flex;justify-content:space-between;align-items:center">
-  <div style="font-size:56px;font-weight:200">08:41</div>
-  <div class="jelly cy" style="height:34px;padding:0 14px;font-size:14px"><span class="ico" data-icon="sun" data-stroke="#fff" style="width:16px;height:16px"></span>24°</div></div>
-  <div style="font-weight:600">Monday, 3 November</div><div style="font-size:12px;color:var(--muted)">Battery 82% · Clear in Pune</div></div>
- <div class="jelly v app"><span class="ico" data-icon="phone" data-stroke="#fff"></span>Phone</div>
- <div class="jelly mg app"><span class="ico" data-icon="chat" data-stroke="#fff"></span>Messages</div>
- <div class="jelly cy app"><span class="ico" data-icon="globe" data-stroke="#fff"></span>Browser</div>
- <div class="jelly dim app"><span class="ico" data-icon="camera" data-stroke="#C9D2F0"></span>Camera</div>
- <div class="jelly dim app"><span class="ico" data-icon="music" data-stroke="#C9D2F0"></span>Music</div>
- <div class="jelly dim app"><span class="ico" data-icon="photos" data-stroke="#C9D2F0"></span>Photos</div>
-</div>
-<div class="glass dock"><div class="jelly dim"><span class="ico" data-icon="mail" data-stroke="#C9D2F0"></span></div>
- <div class="jelly v"><span class="ico" data-icon="search" data-stroke="#fff"></span></div>
- <div class="jelly dim"><span class="ico" data-icon="map" data-stroke="#C9D2F0"></span></div>
- <div class="jelly dim"><span class="ico" data-icon="gear" data-stroke="#C9D2F0"></span></div></div>
-</body></html>
+ <div class="field tabs" style="display:flex"><div class="primary" style="color:#fff">Today</div><div>All apps</div><div>Settings</div></div>
+ <div style="display:flex;gap:10px"><div class="card stat" style="box-shadow:0 0 22px rgba(139,92,246,.55)"><small>BATTERY</small><b>72%</b></div>
+  <div class="card stat"><small>OUTSIDE</small><b>24°</b></div><div class="card stat"><small>TODAY</small><b>3 Nov</b></div></div>
+ <div class="card" style="margin-top:14px;padding:6px 0">
+  <div class="row"><div class="ic"><span class="ico" data-icon="phone" data-stroke="#22D3EE"></span></div><div style="flex:1">Phone<small>Shortcut</small></div><span style="color:var(--muted)">›</span></div>
+  <div class="row"><div class="ic"><span class="ico" data-icon="chat" data-stroke="#F43F9E"></span></div><div style="flex:1">Messages<small>Shortcut</small></div><span style="color:var(--muted)">›</span></div>
+  <div class="row"><div class="ic"><span class="ico" data-icon="camera" data-stroke="#A78BFA"></span></div><div style="flex:1">Camera<small>Favourite</small></div><span style="color:var(--muted)">›</span></div>
+  <div class="row"><div class="ic"><span class="ico" data-icon="map" data-stroke="#22D3EE"></span></div><div style="flex:1">Maps<small>Favourite</small></div><span style="color:var(--muted)">›</span></div>
+  <div class="row"><div class="ic"><span class="ico" data-icon="music" data-stroke="#F43F9E"></span></div><div style="flex:1">Music<small>Favourite</small></div><span style="color:var(--muted)">›</span></div></div>
+ <div style="margin-top:14px">
+  <div class="key toast"><span style="color:var(--violet)">◷</span>Good morning, Asha · 8:41 AM</div>
+  <div class="key toast"><span style="color:var(--violet)">☀</span>Outside: 24° clear sky</div>
+  <div class="key toast"><span style="color:var(--violet)">⚡</span>Battery is 72%</div></div>
+ <div class="dock"><div class="s jelly v"><span class="ico" data-icon="phone" data-stroke="#fff"></span></div><div class="line"></div>
+  <div class="s jelly dim"><span class="ico" data-icon="chat" data-stroke="#C9D2F0"></span></div><div class="line"></div>
+  <div class="s jelly dim"><span class="ico" data-icon="camera" data-stroke="#C9D2F0"></span></div><div class="line"></div>
+  <div class="s jelly dim"><span class="ico" data-icon="map" data-stroke="#C9D2F0"></span></div><div class="line"></div>
+  <div class="s jelly dim"><span class="ico" data-icon="music" data-stroke="#C9D2F0"></span></div></div>
+</div></body></html>
