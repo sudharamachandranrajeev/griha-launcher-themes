@@ -1,0 +1,49 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="out" content="elements.png,720,880,2,png">
+<link rel="stylesheet" href="style.css"><script src="../../../tools/art/common.js"></script>
+<style>
+html,body{width:720px;height:880px;overflow:hidden}
+body{padding:34px 40px;background:#ECEBE8}
+h1{font-weight:900;font-size:34px;margin:0 0 4px}h2{font-size:13px;letter-spacing:.14em;color:var(--muted);margin:30px 0 14px;font-weight:800}
+.grid{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.btn{height:54px;padding:0 26px;display:flex;align-items:center;gap:10px;font-weight:800;font-size:16px}
+.cap{font-size:11px;color:var(--muted);text-align:center;margin-top:10px;font-weight:600}
+.toggle{width:74px;height:40px;border-radius:999px;position:relative}
+.toggle i{position:absolute;top:5px;width:30px;height:30px;border-radius:50%;background:#fff}
+.swatch{width:62px;height:62px;border-radius:20px;border:2.6px solid #111}
+</style></head><body>
+<h1>Pastel Neo</h1><div style="color:var(--muted);font-weight:600">Soft raised surfaces, pastel fills, bold ink outlines</div>
+<h2>COLOURS</h2>
+<div class="grid">
+ <div><div class="swatch" style="background:#ECEBE8;border-color:#C9C6BF"></div><div class="cap">Page</div></div>
+ <div><div class="swatch coral"></div><div class="cap">Coral</div></div>
+ <div><div class="swatch mint"></div><div class="cap">Mint</div></div>
+ <div><div class="swatch" style="background:var(--sun)"></div><div class="cap">Sun</div></div>
+ <div><div class="swatch" style="background:var(--sky)"></div><div class="cap">Sky</div></div>
+ <div><div class="swatch" style="background:#111"></div><div class="cap">Ink</div></div>
+</div>
+<h2>BUTTONS</h2>
+<div class="grid">
+ <div><div class="key btn"><span class="ico" data-icon="plus" style="width:20px;height:20px"></span>Raised</div><div class="cap">Key · rest</div></div>
+ <div><div class="key btn pressed">Pressed</div><div class="cap">Key · pressed in</div></div>
+ <div><div class="pill mint btn">Primary</div><div class="cap">Primary · outlined</div></div>
+ <div><div class="pill coral btn">18° – 27°</div><div class="cap">Field · pill</div></div>
+</div>
+<h2>CONTROLS</h2>
+<div class="grid">
+ <div><div class="toggle pill mint" style="justify-content:flex-start"><i style="right:5px;border:2.6px solid #111;top:2.5px"></i></div><div class="cap">On</div></div>
+ <div><div class="toggle key pressed"><i style="left:5px;box-shadow:var(--raise-s)"></i></div><div class="cap">Off</div></div>
+ <div style="width:220px"><div class="key pressed" style="height:16px;border-radius:999px;position:relative"><div class="pill mint" style="position:absolute;left:0;top:-2px;height:20px;width:62%"></div>
+   <div style="position:absolute;left:58%;top:-9px;width:34px;height:34px;border-radius:50%;background:#fff;border:2.6px solid #111"></div></div><div class="cap" style="margin-top:22px">Slider</div></div>
+ <div><div class="key" style="width:64px;height:64px;display:flex;align-items:center;justify-content:center"><span class="ico" data-icon="search" style="width:26px;height:26px"></span></div><div class="cap">Icon key</div></div>
+</div>
+<h2>CARDS AND WEEK</h2>
+<div class="grid" style="align-items:flex-start">
+ <div class="card" style="width:300px;padding:18px 20px"><div class="chunky" style="font-size:40px">08:41</div><div style="font-weight:800">Monday, 3 November</div>
+  <div class="sub" style="color:var(--muted);font-size:12px">Raised card · light from the top left</div></div>
+ <div style="position:relative;width:290px;height:70px">
+  <div class="pill mint" style="position:absolute;inset:14px 0 auto 0;height:38px"></div>
+  <div style="position:absolute;left:14px;top:4px;width:40px;height:62px;background:#fff;border:2.6px solid #111;border-radius:10px;text-align:center;font-weight:800;font-size:12px;padding-top:6px">Mon<br><br>3</div>
+  <div style="position:absolute;left:64px;top:22px;font-weight:800;font-size:12px;word-spacing:14px">Tue Wed Thu Fri Sat</div>
+ </div>
+</div>
+</body></html>

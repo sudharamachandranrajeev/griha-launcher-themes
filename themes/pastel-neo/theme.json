@@ -1,0 +1,34 @@
+{
+  "id": "pastel-neo",
+  "name": "Pastel Neo",
+  "version": 1,
+  "engine": 2,
+  "author": "sudharamachandranrajeev",
+  "description": "Soft grey neumorphism with coral and mint, chunky type and bold black outlines on pills and chips.",
+  "inspiration": "A neumorphism home screen board: raised soft cards, pastel pills with thick ink outlines.",
+  "requires": ["palette.v1", "depth.shadows", "depth.inner", "depth.outline", "backdrop.plain", "touch.bloom", "headings.style", "font.system"],
+  "prefers": ["widget.pill-week", "icons.plate", "wall.motion"],
+  "palette": {
+    "light": { "background": "#ECEBE8", "surface": "#EFEEEB", "accent": "#F48B8B", "secondary": "#86DB8A", "ink": "#111111", "muted": "#55524C",
+               "onSurface": "#111111", "extras": { "sun": "#F7E34B", "sky": "#2AA1F2" } },
+    "dark":  { "background": "#22242A", "surface": "#272A31", "accent": "#F59A9A", "secondary": "#8EE092", "ink": "#F2F1EE", "muted": "#A9A7A2",
+               "onSurface": "#F2F1EE", "extras": { "sun": "#F7E34B", "sky": "#4CB3F5" } }
+  },
+  "depth": {
+    "corners": 1.35,
+    "outline": { "width": 2.5, "colour": "ink", "roles": ["primary", "field"] },
+    "card": { "fill": ["#F4F3F0", "#E9E8E4"], "rim": { "width": 1, "top": "white@0.9", "bottom": "white@0" },
+              "shadows": [[-7, -7, 16, "white@0.95"], [9, 11, 20, "#B9B6AE@0.55"]], "pressInner": [[4, 4, 8, "#B9B6AE@0.55"], [-3, -3, 7, "white@0.9"]] },
+    "key": { "fill": ["#F4F3F0", "#E9E8E4"], "shadows": [[-4, -4, 9, "white@0.95"], [5, 6, 11, "#B9B6AE@0.55"]], "pressInner": [[3, 3, 6, "#B9B6AE@0.6"]] },
+    "field": { "fill": ["accent"], "inner": [[0, 3, 5, "black@0.10"]] },
+    "primary": { "fill": ["secondary"], "shadows": [[0, 6, 14, "secondary@0.45"]], "pressInner": [[0, 3, 6, "black@0.15"]] }
+  },
+  "headings": { "caps": false, "spacing": 0.02, "font": "system:sans-serif-black" },
+  "backdrop": { "kind": "plain" },
+  "touch": { "pulse": "bloom" },
+  "icons": { "shape": "squircle", "plate": "surface", "tint": "pastel" },
+  "widgets": { "week": "pill-week", "clock": { "font": "system:sans-serif-black", "size": 1.4 } },
+  "fonts": { "body": "system:sans-serif-medium" },
+  "wallpapers": [ { "file": "wallpapers/home.jpg", "for": "any", "dim": 0 } ],
+  "preview": "preview.png"
+}

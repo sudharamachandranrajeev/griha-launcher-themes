@@ -1,0 +1,329 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/sudharamachandranrajeev/griha-themes/schema/theme.schema.json",
+  "title": "Griha theme",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "version",
+    "engine",
+    "requires",
+    "palette",
+    "depth"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 40
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "engine": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "author": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "inspiration": {
+      "type": "string"
+    },
+    "requires": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "prefers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "palette": {
+      "type": "object",
+      "required": [
+        "light",
+        "dark"
+      ],
+      "properties": {
+        "light": {
+          "$ref": "#/$defs/colours"
+        },
+        "dark": {
+          "$ref": "#/$defs/colours"
+        }
+      }
+    },
+    "depth": {
+      "type": "object",
+      "properties": {
+        "corners": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "outline": {
+          "type": "object",
+          "properties": {
+            "width": {
+              "type": "number"
+            },
+            "colour": {
+              "$ref": "#/$defs/colour"
+            },
+            "roles": {
+              "type": "array"
+            }
+          }
+        },
+        "card": {
+          "$ref": "#/$defs/surface"
+        },
+        "key": {
+          "$ref": "#/$defs/surface"
+        },
+        "field": {
+          "$ref": "#/$defs/surface"
+        },
+        "primary": {
+          "$ref": "#/$defs/surface"
+        }
+      }
+    },
+    "states": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/colour"
+      }
+    },
+    "headings": {
+      "type": "object",
+      "properties": {
+        "caps": {
+          "type": "boolean"
+        },
+        "spacing": {
+          "type": "number"
+        },
+        "font": {
+          "type": "string"
+        }
+      }
+    },
+    "backdrop": {
+      "type": "object",
+      "required": [
+        "kind"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string"
+        }
+      }
+    },
+    "touch": {
+      "type": "object",
+      "properties": {
+        "pulse": {
+          "enum": [
+            "bloom",
+            "ring",
+            "glow",
+            "ripple",
+            "embers",
+            "none"
+          ]
+        }
+      }
+    },
+    "icons": {
+      "type": "object"
+    },
+    "widgets": {
+      "type": "object"
+    },
+    "fonts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "wallpapers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "file",
+          "for"
+        ],
+        "properties": {
+          "file": {
+            "type": "string",
+            "pattern": "^wallpapers/[a-z0-9-]+\\.(jpg|png|webp)$"
+          },
+          "for": {
+            "enum": [
+              "home",
+              "drawer",
+              "lock",
+              "any"
+            ]
+          },
+          "dim": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      }
+    },
+    "preview": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "colour": {
+      "type": "string",
+      "pattern": "^((#[0-9A-Fa-f]{6}|background|surface|accent|secondary|ink|muted|onSurface|white|black)(@(0|1|0?\\.[0-9]+))?|#[0-9A-Fa-f]{8})$",
+      "description": "#RRGGBB, #AARRGGBB, or a palette name; any but #AARRGGBB may add @opacity, such as accent@0.4."
+    },
+    "colours": {
+      "type": "object",
+      "required": [
+        "background",
+        "surface",
+        "accent",
+        "secondary",
+        "ink",
+        "muted"
+      ],
+      "properties": {
+        "background": {
+          "$ref": "#/$defs/colour"
+        },
+        "surface": {
+          "$ref": "#/$defs/colour"
+        },
+        "accent": {
+          "$ref": "#/$defs/colour"
+        },
+        "secondary": {
+          "$ref": "#/$defs/colour"
+        },
+        "ink": {
+          "$ref": "#/$defs/colour"
+        },
+        "muted": {
+          "$ref": "#/$defs/colour"
+        },
+        "onSurface": {
+          "$ref": "#/$defs/colour"
+        },
+        "extras": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/colour"
+          }
+        }
+      }
+    },
+    "shade": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "#/$defs/colour"
+        }
+      ],
+      "minItems": 4,
+      "maxItems": 5
+    },
+    "surface": {
+      "type": "object",
+      "properties": {
+        "fill": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/colour"
+          },
+          "minItems": 1,
+          "maxItems": 3
+        },
+        "rim": {
+          "type": "object",
+          "properties": {
+            "width": {
+              "type": "number"
+            },
+            "top": {
+              "$ref": "#/$defs/colour"
+            },
+            "bottom": {
+              "$ref": "#/$defs/colour"
+            }
+          }
+        },
+        "shadows": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/shade"
+          }
+        },
+        "inner": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/shade"
+          }
+        },
+        "pressInner": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/shade"
+          }
+        },
+        "glow": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/shade"
+          }
+        },
+        "lip": {
+          "type": "number"
+        },
+        "gloss": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "flare": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  }
+}

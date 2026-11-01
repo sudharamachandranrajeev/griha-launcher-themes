@@ -1,0 +1,34 @@
+{
+  "id": "tangerine-peel",
+  "name": "Tangerine Peel",
+  "version": 1,
+  "engine": 2,
+  "author": "sudharamachandranrajeev",
+  "description": "Orange paper peeling back from a black panel, a deep well holding the clock and black badge icons along the bottom.",
+  "inspiration": "An orange home with a curled page corner, an inset analog clock and round black icons.",
+  "requires": ["palette.v1", "depth.shadows", "depth.inner", "decor.peel", "widget.well", "icons.badge", "font.system", "font.bundled"],
+  "prefers": ["wall.motion", "touch.glow"],
+  "palette": {
+    "light": { "background": "#F28C45", "surface": "#161616", "accent": "#161616", "secondary": "#C5642A", "ink": "#121212", "muted": "#5B3417",
+               "onSurface": "#F4EDE6", "extras": { "paper": "#F7F4EF", "numeral": "#121212" } },
+    "dark":  { "background": "#D9722D", "surface": "#111111", "accent": "#111111", "secondary": "#A85020", "ink": "#0E0E0E", "muted": "#4A2A12",
+               "onSurface": "#F4EDE6", "extras": { "paper": "#E8E3DC", "numeral": "#0E0E0E" } }
+  },
+  "depth": {
+    "corners": 0.9,
+    "card": { "fill": ["#1C1C1C", "#121212"], "shadows": [[0, 8, 18, "black@0.45"]], "rim": { "width": 1, "top": "white@0.10", "bottom": "black@0.5" } },
+    "key": { "fill": ["#1D1D1D", "#0F0F0F"], "rim": { "width": 1.5, "top": "white@0.18", "bottom": "black@0.6" }, "gloss": 0.18,
+             "shadows": [[0, 4, 8, "#7A3A10@0.6"]], "pressInner": [[0, 3, 6, "black@0.7"]] },
+    "field": { "fill": ["#E5793A", "#F49656"], "inner": [[0, 14, 28, "#6E2F08@0.65"], [0, -6, 14, "#FFD2AE@0.55"]] },
+    "primary": { "fill": ["surface"], "rim": { "width": 1, "top": "white@0.2", "bottom": "black@0.5" }, "shadows": [[0, 6, 14, "#7A3A10@0.5"]] }
+  },
+  "headings": { "caps": true, "spacing": 0.04, "font": "system:sans-serif-condensed" },
+  "backdrop": { "kind": "plain" },
+  "decor": { "peel": { "corner": "top-right", "panel": "surface", "paper": "#F7F4EF", "size": 0.28, "band": 0.30 } },
+  "touch": { "pulse": "glow" },
+  "icons": { "style": "badge", "badge": "#121212", "glyph": "background" },
+  "widgets": { "clock": { "style": "well", "numerals": "mixed", "size": 0.78 } },
+  "fonts": { "display": "system:sans-serif-thin", "script": "bundled:dancing_script" },
+  "wallpapers": [ { "file": "wallpapers/home.jpg", "for": "any", "dim": 0 } ],
+  "preview": "preview.png"
+}

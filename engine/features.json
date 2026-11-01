@@ -1,0 +1,69 @@
+{
+  "about": "What Griha's theme engine can draw. A theme lists the features it requires; the catalogue only publishes themes whose requirements are all in a released engine. Griha will export this file from each release once the theme engine ships; until then it is kept here by hand.",
+  "engines": {
+    "1": {
+      "griha": "0.6.0",
+      "status": "planned",
+      "features": [
+        "palette.v1",
+        "depth.shadows", "depth.inner", "depth.rim", "depth.lip", "depth.gloss", "depth.glow",
+        "backdrop.plain", "backdrop.light", "backdrop.grid", "backdrop.haze", "backdrop.vignette",
+        "wall.picture", "wall.motion",
+        "touch.bloom", "touch.ring", "touch.glow", "touch.ripple", "touch.embers",
+        "headings.style",
+        "icons.shape", "icons.plate", "icons.mono",
+        "font.system", "font.bundled"
+      ]
+    },
+    "2": {
+      "griha": "0.7.0",
+      "status": "planned",
+      "features": [
+        "depth.outline", "depth.flare", "state.colours",
+        "backdrop.blob", "backdrop.chrome", "decor.peel",
+        "widget.ring", "widget.well", "widget.pill-week",
+        "type.vertical",
+        "icons.dot", "icons.badge"
+      ]
+    }
+  },
+  "glossary": {
+    "palette.v1": "Light and dark palettes: background, surface, accent, secondary, ink, muted, plus onSurface and named extras.",
+    "depth.shadows": "Stacked drop shadows and highlights per role (card, key, field, primary).",
+    "depth.inner": "Inner shadows: pressed-in fields and the pressed state.",
+    "depth.rim": "A gradient edge, lit at the top.",
+    "depth.lip": "A solid side under the face, like a key; presses sink into it.",
+    "depth.gloss": "A white sheen over the top of a surface.",
+    "depth.glow": "Coloured light around a surface while it glows, is focused or pressed.",
+    "depth.outline": "A bold ink outline, like a sticker or a cartoon cell.",
+    "depth.flare": "A bright streak of light along a glossy edge while hovered or focused.",
+    "state.colours": "A different fill per state: default, hover, focus, pressed, busy, done.",
+    "backdrop.plain": "A flat page colour.",
+    "backdrop.light": "A soft wash of light from one side.",
+    "backdrop.grid": "Hairline columns and rows, as on a styleguide.",
+    "backdrop.haze": "Large soft blobs of colour behind see-through panes.",
+    "backdrop.vignette": "A darker edge around a lit middle.",
+    "backdrop.blob": "An organic shape in a second colour, flowing from one edge.",
+    "backdrop.chrome": "Out-of-focus polished metal discs at the edges.",
+    "decor.peel": "A page corner peeling back to show the layer underneath.",
+    "wall.picture": "A picture behind home and all apps, drawn by Griha.",
+    "wall.motion": "The picture drifts with scrolling and leans toward the finger.",
+    "touch.bloom": "A tap sends out a soft white bloom.",
+    "touch.ring": "A tap sends out a thin ring.",
+    "touch.glow": "A tap sends out a warm glow.",
+    "touch.ripple": "A tap sends out glass ripples in turning tints.",
+    "touch.embers": "A tap throws a few embers.",
+    "widget.ring": "Circular gauges with a track and a lit arc (battery, clock seconds).",
+    "widget.well": "A deep circular well pressed into the page, holding the clock.",
+    "widget.pill-week": "The week as a pill with today and marked days raised in white boxes.",
+    "type.vertical": "Text set sideways along the edge.",
+    "headings.style": "Section headings: capitals, letter spacing, weight.",
+    "icons.shape": "Icon shapes: original, circle, squircle, teardrop.",
+    "icons.plate": "A coloured plate behind each icon.",
+    "icons.mono": "Single-colour icons where the app provides one.",
+    "icons.dot": "A coloured dot instead of an icon, from the theme's dot colours.",
+    "icons.badge": "Mono icons on a solid round badge.",
+    "font.system": "Android's own font families, such as sans-serif-black.",
+    "font.bundled": "Fonts shipped inside a theme package."
+  }
+}

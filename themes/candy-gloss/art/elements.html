@@ -1,0 +1,41 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="out" content="elements.png,720,880,2,png">
+<link rel="stylesheet" href="style.css"><script src="../../../tools/art/common.js"></script><style>
+html,body{width:720px;height:880px;overflow:hidden;background:radial-gradient(120% 80% at 30% 0%,#fff,#E9EDF3 60%,#DCE2EA)}
+body{padding:34px 40px;position:relative}
+h1{font-size:34px;margin:0}h2{font-size:12px;letter-spacing:.16em;color:var(--muted);margin:26px 0 14px}
+.ladder{display:flex;flex-direction:column;gap:14px;width:290px;position:absolute;left:40px;top:150px}
+.ladder .jelly{height:56px;font-size:19px}
+.arrow{height:14px;width:2px;background:#7E889A;margin:-6px auto;position:relative}
+.arrow::after{content:"";position:absolute;bottom:-4px;left:-4px;border:5px solid transparent;border-top-color:#7E889A}
+.right{position:absolute;left:380px;top:150px;width:300px}
+.cap{font-size:11px;color:var(--muted);font-weight:600;margin-top:8px}
+</style></head><body>
+<h1>Candy Gloss</h1><div style="color:var(--muted);font-weight:600;margin-top:4px">Glossy jelly pills: each state has its own colour and light</div>
+<div class="ladder">
+ <div class="jelly blue">default</div><div class="arrow"></div>
+ <div class="jelly orange flare">hover</div><div class="arrow"></div>
+ <div class="jelly navy"><span class="ico" data-icon="search" data-stroke="#9DB8F2" style="width:20px;height:20px"></span>focus</div><div class="arrow"></div>
+ <div class="frame" style="padding:8px;margin:-8px"><div class="jelly pressed" style="height:56px;font-size:19px"><span class="ico" data-icon="sun" style="width:20px;height:20px"></span>pressed</div></div><div class="arrow"></div>
+ <div class="jelly red"><span class="ico" data-icon="spark" data-stroke="#fff" style="width:20px;height:20px"></span>busy</div><div class="arrow"></div>
+ <div class="jelly coral flare"><span class="ico" data-icon="flame" data-stroke="#fff" style="width:20px;height:20px"></span>busy · glowing</div><div class="arrow"></div>
+ <div class="jelly done"><span class="ico" data-icon="check" style="width:20px;height:20px"></span>done</div>
+</div>
+<div class="right">
+ <h2 style="margin-top:0">CARD</h2>
+ <div class="glass" style="padding:18px 20px"><div style="font-size:40px;font-weight:300">08:41</div><div style="font-weight:600">Monday, 3 November</div>
+  <div class="cap">Frosted card with a white rim</div></div>
+ <h2>FIELD</h2>
+ <div style="height:52px;border-radius:999px;background:linear-gradient(180deg,#E1E6EE,#EEF2F7);box-shadow:inset 0 2px 5px rgba(0,0,0,.1),0 0 0 1px rgba(255,255,255,.9);display:flex;align-items:center;padding:0 18px;gap:10px;color:var(--muted)">
+  <span class="ico" data-icon="search" style="width:20px;height:20px"></span>Search apps</div>
+ <h2>KEYS AND SWITCH</h2>
+ <div style="display:flex;gap:16px;align-items:center">
+  <div class="jelly blue" style="width:58px;height:58px"><span class="ico" data-icon="phone" data-stroke="#fff" style="width:24px;height:24px"></span></div>
+  <div class="jelly pressed" style="width:58px;height:58px"><span class="ico" data-icon="globe" style="width:24px;height:24px"></span></div>
+  <div class="jelly orange flare" style="width:58px;height:58px"><span class="ico" data-icon="music" data-stroke="#fff" style="width:24px;height:24px"></span></div>
+  <div class="jelly blue" style="width:84px;height:44px;justify-content:flex-end;padding:4px"><i style="width:36px;height:36px;border-radius:50%;background:linear-gradient(#fff,#E2E8F0);box-shadow:0 2px 5px rgba(0,0,0,.25)"></i></div>
+ </div>
+ <div class="cap">Phone · Browser · Music (hover) · Switch on</div>
+ <h2>CHROME</h2>
+ <div style="position:relative;height:150px"><div class="chrome" style="width:140px;height:140px;left:0"></div><div class="chrome" style="width:100px;height:100px;left:160px;top:30px;filter:blur(1.5px)"></div></div>
+</div>
+</body></html>

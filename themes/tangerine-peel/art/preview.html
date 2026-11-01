@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="out" content="preview.png,360,780,3,png">
+<link rel="stylesheet" href="style.css"><script src="../../../tools/art/common.js"></script><style>
+html,body{width:360px;height:780px;overflow:hidden;background:url(../wallpapers/home.jpg) center/cover}
+.n{position:absolute;font-weight:800;color:#121212;transform:translate(-50%,-50%)}
+</style></head><body>
+<div style="position:absolute;left:22px;top:46px;color:#F4EDE6">
+ <div style="font-size:44px;font-weight:200;color:#F28C45;line-height:1">03</div>
+ <div style="font-weight:800;font-size:15px;letter-spacing:.06em;margin-top:4px">NOVEMBER</div>
+ <div style="font-weight:600;font-size:11.5px;line-height:1.35;margin-top:8px;width:186px">It's 8:41 in the morning. The battery is at 82%, the sky is clear, with a high of 27° and a low of 18°.</div>
+</div>
+<div style="position:absolute;right:20px;top:58px;text-align:right;color:#F4EDE6">
+ <div style="width:70px;height:2px;background:#F28C45;margin:0 0 10px auto"></div>
+ <div style="font-size:30px;font-weight:200;letter-spacing:.02em">MONDAY</div>
+ <div style="font-family:Script;font-size:28px;margin-top:-6px;margin-right:6px">Morning</div>
+ <div style="font-size:9px;letter-spacing:.06em;margin-top:2px">Media volume 18%</div>
+</div>
+<div id="face" style="position:absolute;left:40px;top:380px;width:280px;height:280px"></div>
+<div style="position:absolute;left:0;right:0;bottom:24px;display:flex;justify-content:space-around;padding:0 10px">
+ <div class="badge"><span class="ico" data-icon="camera" data-stroke="#F28C45"></span></div><div class="badge"><span class="ico" data-icon="chat" data-stroke="#F28C45"></span></div>
+ <div class="badge"><span class="ico" data-icon="photos" data-stroke="#F28C45"></span></div><div class="badge"><span class="ico" data-icon="music" data-stroke="#F28C45"></span></div>
+ <div class="badge"><span class="ico" data-icon="play" data-stroke="#F28C45"></span></div><div class="badge"><span class="ico" data-icon="globe" data-stroke="#F28C45"></span></div>
+ <div class="badge"><span class="ico" data-icon="phone" data-stroke="#F28C45"></span></div>
+</div>
+<script>
+const f=document.getElementById('face');let h='';
+const big={12:44,3:44,6:44,9:44};
+for(let i=1;i<=12;i++){const a=i/12*2*Math.PI,r=i%3?104:96,x=140+r*Math.sin(a),y=140-r*Math.cos(a);
+ h+=`<div class="n" style="left:${x}px;top:${y}px;font-size:${big[i]||17}px;font-weight:${big[i]?800:600}">${i}</div>`}
+h+=`<div class="n" style="left:140px;top:104px;font-size:12px;font-weight:600;transform:translate(-50%,-50%) rotate(-12deg)">3 Nov 2026</div>`;
+h+=`<div class="n" style="left:110px;top:170px;font-size:12px;font-weight:600;transform:translate(-50%,-50%) rotate(-12deg)">Monday</div>`;
+const hand=(deg,len,w,c)=>`<div style="position:absolute;left:${140-w/2}px;top:${140-len}px;width:${w}px;height:${len}px;background:${c};border-radius:${w}px;transform-origin:50% 100%;transform:rotate(${deg}deg);box-shadow:-3px 4px 6px rgba(90,30,0,.4)"></div>`;
+h+=hand((8+41/60)*30,62,8,'#fff')+hand(41*6,92,5,'#fff');
+h+=`<div style="position:absolute;left:131px;top:131px;width:18px;height:18px;border-radius:50%;background:#fff;border:4px solid #121212"></div>`;
+f.innerHTML=h;
+</script></body></html>

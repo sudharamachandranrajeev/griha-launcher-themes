@@ -1,0 +1,35 @@
+{
+  "id": "candy-gloss",
+  "name": "Candy Gloss",
+  "version": 1,
+  "engine": 2,
+  "author": "sudharamachandranrajeev",
+  "description": "Glossy jelly pills that change colour with every state, a coloured glow underneath and chrome dials at the edges.",
+  "inspiration": "A button states board: default, hover, focus, pressed, busy and done as glossy pills with light flares.",
+  "requires": ["palette.v1", "depth.shadows", "depth.rim", "depth.gloss", "depth.glow", "state.colours", "backdrop.light", "touch.glow", "font.system"],
+  "prefers": ["depth.flare", "backdrop.chrome", "wall.motion"],
+  "palette": {
+    "light": { "background": "#E9EDF3", "surface": "#F6F8FB", "accent": "#1F7BFF", "secondary": "#C9D2DE", "ink": "#121826", "muted": "#5C6577",
+               "onSurface": "#121826", "extras": { "hover": "#FF8F2E", "focus": "#13306E", "busy": "#E5262E", "done": "#DDE3EC" } },
+    "dark":  { "background": "#0D111A", "surface": "#171C27", "accent": "#3D91FF", "secondary": "#2A3242", "ink": "#EEF2F8", "muted": "#9AA4B6",
+               "onSurface": "#EEF2F8", "extras": { "hover": "#FF9A40", "focus": "#2D56B8", "busy": "#F0353C", "done": "#2A3242" } }
+  },
+  "states": { "default": "accent", "hover": "#FF8F2E", "focus": "#13306E", "pressed": "surface", "busy": "#E5262E", "done": "#DDE3EC" },
+  "depth": {
+    "corners": 1.25,
+    "card": { "fill": ["#FFFFFF@0.85", "#F2F5F9@0.75"], "rim": { "width": 1, "top": "white", "bottom": "accent@0.25" },
+              "shadows": [[0, 10, 26, "#7A8AA8@0.22"], [0, 1, 2, "black@0.06"]] },
+    "key": { "fill": ["#FFFFFF", "#E8EDF4"], "rim": { "width": 1.5, "top": "white", "bottom": "#B8C3D3" }, "gloss": 0.55,
+             "shadows": [[0, 6, 14, "#7A8AA8@0.28"]], "pressInner": [[0, 3, 6, "black@0.12"]] },
+    "field": { "fill": ["#E3E8F0", "#EEF2F7"], "inner": [[0, 2, 5, "black@0.10"]], "rim": { "width": 1, "top": "black@0.06", "bottom": "white" } },
+    "primary": { "fill": ["#6FB3FF", "accent", "#1460D9"], "rim": { "width": 1.5, "top": "white@0.75", "bottom": "#0B4CC2" },
+                 "gloss": 0.7, "flare": 0.8, "shadows": [[0, 10, 22, "accent@0.55"]], "glow": [[0, 0, 26, "accent@0.6"], [0, 0, 6, "white@0.5", 1]] }
+  },
+  "headings": { "caps": false, "spacing": 0, "font": "system:sans-serif-medium" },
+  "backdrop": { "kind": "light", "from": "top" },
+  "touch": { "pulse": "glow", "tint": "state" },
+  "icons": { "shape": "squircle", "plate": "none" },
+  "fonts": { "body": "system:sans-serif" },
+  "wallpapers": [ { "file": "wallpapers/home.jpg", "for": "any", "dim": 0.05 } ],
+  "preview": "preview.png"
+}

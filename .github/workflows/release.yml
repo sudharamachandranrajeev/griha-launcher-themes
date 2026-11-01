@@ -1,0 +1,41 @@
+# Publishes the catalogue: validates, packs each theme and its wallpaper pack, writes
+# index.json with SHA-256 checksums and attaches everything to a new release.
+# Griha reads https://github.com/sudharamachandranrajeev/griha-themes/releases/latest/download/index.json
+name: Release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - run: pip install jsonschema==4.23.0
+      - name: Validate
+        run: python3 tools/validate.py
+      - name: Pack themes and write the index
+        run: |
+          TAG="themes-$(date -u +%Y.%m.%d)-${{ github.run_number }}"
+          echo "TAG=$TAG" >> "$GITHUB_ENV"
+          python3 tools/build_index.py "$TAG"
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "Griha themes catalogue $TAG."
+            echo
+            echo "Wallpaper packs work in Griha today: Settings, Look and theme, Wallpapers, Import pictures or ZIP."
+            echo "Theme packages appear once Griha's theme engine supports them."
+            echo
+            echo '```'
+            python3 -c "import json;[print(f\"{t['id']}: {t['status']}\") for t in json.load(open('dist/index.json'))['themes']]"
+            echo '```'
+          } > notes.md
+          gh release create "$TAG" dist/* --title "Themes $TAG" --notes-file notes.md --target "$(git rev-parse HEAD)"
