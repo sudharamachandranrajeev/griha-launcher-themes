@@ -2,14 +2,14 @@
 :root{--orange:#F28C45;--black:#161616;--paper:#F7F4EF}
 *{box-sizing:border-box}
 body{margin:0;font-family:Inter,sans-serif}
-.panel{position:absolute;left:0;right:0;top:0;height:300px;background:linear-gradient(180deg,#1B1B1B,#121212);
+.panel{position:absolute;left:0;right:0;top:0;height:300px;background:linear-gradient(180deg,#FBF9F5,#EFEAE2);
  clip-path:polygon(0 0,100% 0,100% 62%,74% 100%,0 100%)}
 .curl{position:absolute;width:124px;height:122px;right:0;top:186px;
  background:linear-gradient(225deg,transparent 49.5%,#D9D3CA 50%,#FFFFFF 62%,#ECE6DD 76%,#BDB5AA 100%);
  clip-path:polygon(100% 0,100% 0,0 100%,100% 100%);transform-origin:100% 100%;filter:drop-shadow(-6px 6px 8px rgba(80,30,0,.45))}
 .flapwrap{position:absolute;left:0;top:0;width:360px;height:320px;filter:drop-shadow(-5px 7px 7px rgba(0,0,0,.55))}
 .flap{position:absolute;inset:0;clip-path:polygon(360px 186px,266px 300px,248px 208px);
- background:linear-gradient(140deg,#FFFFFF 0%,#F2EEE8 40%,#CFC7BC 62%,#9E958A 70%) 248px 186px/112px 114px no-repeat}
+ background:linear-gradient(140deg,#4A4A4A 0%,#2A2A2A 40%,#151515 62%,#0A0A0A 70%) 248px 186px/112px 114px no-repeat}
 .curl{display:none}
 .under{position:absolute;right:0;top:186px;width:94px;height:114px;background:var(--paper);clip-path:polygon(100% 0,100% 100%,0 100%);opacity:0}
 .well{position:absolute;border-radius:50%;background:radial-gradient(circle at 50% 42%,#F59A58 0 55%,#EE8440 75%,#DC6F2B 100%);

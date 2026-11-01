@@ -1,7 +1,7 @@
 {
   "id": "pastel-neo",
   "name": "Pastel Neo",
-  "version": 1,
+  "version": 2,
   "engine": 1,
   "author": "sudharamachandranrajeev",
   "description": "Soft grey neumorphism with coral and mint, chunky type and bold black outlines on pills and chips.",
@@ -55,8 +55,7 @@
       "width": 2.5,
       "colour": "ink",
       "roles": [
-        "primary",
-        "field"
+        "primary"
       ]
     },
     "card": {
@@ -128,16 +127,28 @@
     },
     "field": {
       "fill": [
-        "accent"
+        "#E3E2DE",
+        "#EAE9E5"
       ],
       "inner": [
         [
-          0,
-          3,
-          5,
-          "black@0.10"
+          4,
+          4,
+          8,
+          "#B9B6AE@0.6"
+        ],
+        [
+          -3,
+          -3,
+          7,
+          "white@0.9"
         ]
-      ]
+      ],
+      "rim": {
+        "width": 1,
+        "top": "black@0.04",
+        "bottom": "white@0.9"
+      }
     },
     "primary": {
       "fill": [

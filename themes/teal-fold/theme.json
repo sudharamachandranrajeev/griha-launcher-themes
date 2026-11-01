@@ -1,10 +1,10 @@
 {
   "id": "teal-fold",
   "name": "Teal Fold",
-  "version": 1,
+  "version": 3,
   "engine": 1,
   "author": "sudharamachandranrajeev",
-  "description": "Deep teal paper under a cream panel folded like origami, a sunken clock and cream badges.",
+  "description": "Teal paper under a deep teal panel folded like origami to show cream, a sunken clock and cream badges.",
   "inspiration": "A sibling of Tangerine Peel: the same layered paper, folded from the other corner in teal and cream.",
   "requires": [
     "palette.v1",
@@ -23,12 +23,12 @@
   "palette": {
     "light": {
       "background": "#13615F",
-      "surface": "#F3EDE2",
+      "surface": "#0E5654",
       "accent": "#F3EDE2",
       "secondary": "#0C4644",
       "ink": "#F3EDE2",
       "muted": "#A9CFC9",
-      "onSurface": "#1C2B2A",
+      "onSurface": "#F3EDE2",
       "extras": {
         "paper": "#F3EDE2",
         "gold": "#E3B25B"
@@ -36,12 +36,12 @@
     },
     "dark": {
       "background": "#0D4846",
-      "surface": "#E8E1D4",
+      "surface": "#0A403E",
       "accent": "#E8E1D4",
       "secondary": "#082F2E",
       "ink": "#EDE6DA",
       "muted": "#94BDB7",
-      "onSurface": "#1C2B2A",
+      "onSurface": "#EDE6DA",
       "extras": {
         "paper": "#E8E1D4",
         "gold": "#D9A54A"
@@ -52,39 +52,39 @@
     "corners": 0.9,
     "card": {
       "fill": [
-        "#F7F2E9",
-        "#EAE3D6"
+        "#136664",
+        "#0C4E4C"
       ],
       "shadows": [
         [
           0,
           8,
           18,
-          "#062B2A@0.45"
+          "#031F1E@0.55"
         ]
       ],
       "rim": {
         "width": 1,
-        "top": "white@0.7",
-        "bottom": "black@0.08"
+        "top": "white@0.14",
+        "bottom": "black@0.3"
       }
     },
     "key": {
       "fill": [
-        "#F7F2E9",
-        "#E3DBCC"
+        "#15706D",
+        "#0D5250"
       ],
       "rim": {
         "width": 1.5,
-        "top": "white",
-        "bottom": "black@0.12"
+        "top": "white@0.2",
+        "bottom": "black@0.35"
       },
       "shadows": [
         [
           0,
           4,
           8,
-          "#062B2A@0.55"
+          "#031F1E@0.6"
         ]
       ],
       "pressInner": [
@@ -92,7 +92,7 @@
           0,
           3,
           6,
-          "#5E5A4E@0.5"
+          "#031F1E@0.6"
         ]
       ]
     },
@@ -146,10 +146,9 @@
   "decor": {
     "peel": {
       "corner": "top-left",
-      "panel": "surface",
-      "paper": "#13615F",
-      "size": 0.28,
-      "band": 0.3
+      "panel": "#0A3F3D",
+      "paper": "#F3EDE2",
+      "band": 0.385
     }
   },
   "touch": {

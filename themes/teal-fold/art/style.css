@@ -1,8 +1,8 @@
 :root{--teal:#13615F;--cream:#F3EDE2;--ink:#F3EDE2;--muted:#A9CFC9;--gold:#E3B25B;--dark:#1C2B2A}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,sans-serif;color:var(--ink)}
-.panel{position:absolute;left:0;right:0;top:0;height:300px;background:linear-gradient(180deg,#F7F2E9,#EAE3D6);clip-path:polygon(0 0,100% 0,100% 100%,94px 100%,0 186px)}
+.panel{position:absolute;left:0;right:0;top:0;height:300px;background:linear-gradient(180deg,#0D4A48,#083634);clip-path:polygon(0 0,100% 0,100% 100%,94px 100%,0 186px)}
 .flapwrap{position:absolute;left:0;top:0;width:360px;height:320px;filter:drop-shadow(5px 7px 7px rgba(3,31,30,.5))}
-.flap{position:absolute;inset:0;clip-path:polygon(0 186px,94px 300px,112px 208px);background:linear-gradient(220deg,#2A8B87 0%,#17716E 40%,#0E504E 62%,#08393A 72%) 0 186px/112px 114px no-repeat}
+.flap{position:absolute;inset:0;clip-path:polygon(0 186px,94px 300px,112px 208px);background:linear-gradient(220deg,#FFFBF3 0%,#F3EDE2 40%,#D6CDBE 62%,#B3A994 72%) 0 186px/112px 114px no-repeat}
 .well{position:absolute;border-radius:50%;background:radial-gradient(circle at 50% 42%,#1A7470 0 55%,#145F5C 75%,#0D4A48 100%);
  box-shadow:inset 0 26px 46px rgba(3,31,30,.8),inset 0 -14px 26px rgba(127,207,198,.45),0 -2px 0 rgba(3,31,30,.3),0 3px 0 rgba(127,207,198,.4)}
 .badge{width:44px;height:44px;border-radius:50%;background:radial-gradient(circle at 40% 30%,#FFFBF3,#E6DECF 62%);box-shadow:0 4px 8px rgba(3,31,30,.6),inset 0 -2px 3px rgba(0,0,0,.1);display:flex;align-items:center;justify-content:center}
