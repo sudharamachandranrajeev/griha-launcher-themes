@@ -1,7 +1,7 @@
 {
   "id": "teal-grid",
   "name": "Teal Grid",
-  "version": 1,
+  "version": 2,
   "engine": 2,
   "author": "sudharamachandranrajeev",
   "description": "A product styleguide in teal and cream: headline time, chips, underline tabs, a status card and alert banners on a fine column grid.",
@@ -18,6 +18,8 @@
   ],
   "prefers": [
     "icons.badge",
+    "lock.subject",
+    "lock.theme",
     "wall.motion",
     "widget.well"
   ],
@@ -195,5 +197,12 @@
       "columns": 4,
       "count": 8
     }
-  ]
+  ],
+  "lock": {
+    "subject": "rim",
+    "amount": 0.4,
+    "tint": "#E3B25B",
+    "text": "#E3B25B",
+    "font": "serif"
+  }
 }

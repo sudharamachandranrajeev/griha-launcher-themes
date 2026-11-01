@@ -44,8 +44,14 @@
         "type.vertical",
         "icons.dot",
         "icons.badge",
-        "state.colours"
-      ]
+        "state.colours",
+        "lock.theme",
+        "lock.subject"
+      ],
+      "since": {
+        "lock.theme": "0.7.0",
+        "lock.subject": "0.7.0"
+      }
     },
     "3": {
       "griha": "0.7.0",
@@ -98,6 +104,8 @@
     "font.system": "Android's own font families, such as sans-serif-black.",
     "font.bundled": "Fonts shipped inside a theme package.",
     "home.blocks": "The theme's own home: a list of blocks (clock cards, gauges, panels, app styles, docks, bars) laid out top to bottom.",
-    "widget.meters": "Tall outlined meters for battery and music volume."
+    "widget.meters": "Tall outlined meters for battery and music volume.",
+    "lock.theme": "The lock screen in the theme's colours and lettering, with the theme's picture or page when the user has no lock design of their own.",
+    "lock.subject": "A light, optional styling of the lock photo's subject in the theme's colour: colour wash, duotone, edge light or halo. The photo itself is never changed."
   }
 }

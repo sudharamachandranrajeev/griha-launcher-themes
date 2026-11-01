@@ -1,7 +1,7 @@
 {
   "id": "berry-wave",
   "name": "Berry Wave",
-  "version": 2,
+  "version": 3,
   "engine": 2,
   "author": "sudharamachandranrajeev",
   "description": "Cream paper with a berry-red wave rising from the bottom left, ink-dark rings and a coloured dot for every app.",
@@ -18,6 +18,8 @@
   ],
   "prefers": [
     "icons.dot",
+    "lock.subject",
+    "lock.theme",
     "type.vertical",
     "wall.motion",
     "widget.ring"
@@ -191,5 +193,10 @@
       "count": 8,
       "gap": 10
     }
-  ]
+  ],
+  "lock": {
+    "subject": "duotone",
+    "amount": 0.35,
+    "font": "heavy"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "tangerine-peel",
   "name": "Tangerine Peel",
-  "version": 4,
+  "version": 5,
   "engine": 2,
   "author": "sudharamachandranrajeev",
   "description": "Orange paper under a cream panel peeling back to show black, cream cards, a deep clock well and black badge icons.",
@@ -20,6 +20,8 @@
   ],
   "prefers": [
     "font.bundled",
+    "lock.subject",
+    "lock.theme",
     "wall.motion"
   ],
   "palette": {
@@ -197,5 +199,12 @@
       "count": 6,
       "gap": 34
     }
-  ]
+  ],
+  "lock": {
+    "subject": "rim",
+    "amount": 0.45,
+    "tint": "secondary",
+    "text": "secondary",
+    "font": "condensed"
+  }
 }

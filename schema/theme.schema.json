@@ -238,6 +238,46 @@
     },
     "decor": {
       "type": "object"
+    },
+    "lock": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "How the theme dresses the lock screen (lock.theme, lock.subject; Griha 0.7.0+, older Griha ignores it).",
+      "properties": {
+        "subject": {
+          "enum": [
+            "wash",
+            "duotone",
+            "rim",
+            "halo"
+          ],
+          "description": "The theme's pick for styling the lock photo's subject; users can change or turn it off."
+        },
+        "amount": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "How strongly; keep it subtle (0.25 to 0.5)."
+        },
+        "tint": {
+          "type": "string",
+          "description": "Colour token the subject is styled in; the accent by default."
+        },
+        "text": {
+          "type": "string",
+          "description": "Colour token for the lock date; the accent by default. Griha shades it until it reads on the photo."
+        },
+        "font": {
+          "enum": [
+            "thin",
+            "heavy",
+            "bold",
+            "condensed",
+            "serif",
+            "script"
+          ]
+        }
+      }
     }
   },
   "$defs": {

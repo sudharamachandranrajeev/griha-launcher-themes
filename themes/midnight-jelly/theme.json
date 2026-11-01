@@ -1,7 +1,7 @@
 {
   "id": "midnight-jelly",
   "name": "Midnight Jelly",
-  "version": 2,
+  "version": 3,
   "engine": 2,
   "author": "sudharamachandranrajeev",
   "description": "Neon jelly pills on midnight blue: cyan, magenta and violet gloss with light spilling onto the page.",
@@ -19,6 +19,8 @@
   ],
   "prefers": [
     "depth.flare",
+    "lock.subject",
+    "lock.theme",
     "state.colours",
     "wall.motion"
   ],
@@ -233,5 +235,11 @@
       "count": 5,
       "gap": 20
     }
-  ]
+  ],
+  "lock": {
+    "subject": "halo",
+    "amount": 0.5,
+    "tint": "#E0338E",
+    "font": "heavy"
+  }
 }

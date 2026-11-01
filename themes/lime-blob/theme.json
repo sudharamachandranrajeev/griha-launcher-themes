@@ -1,7 +1,7 @@
 {
   "id": "lime-blob",
   "name": "Lime Blob",
-  "version": 2,
+  "version": 3,
   "engine": 2,
   "author": "sudharamachandranrajeev",
   "description": "Charcoal with a lime blob flowing from the top, ring gauges, sideways type and a coloured dot for every app.",
@@ -20,6 +20,8 @@
     "widget.ring"
   ],
   "prefers": [
+    "lock.subject",
+    "lock.theme",
     "wall.motion"
   ],
   "palette": {
@@ -200,5 +202,11 @@
         }
       ]
     }
-  ]
+  ],
+  "lock": {
+    "subject": "duotone",
+    "amount": 0.3,
+    "tint": "secondary",
+    "font": "heavy"
+  }
 }
