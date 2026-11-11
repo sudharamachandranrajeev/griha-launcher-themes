@@ -1,6 +1,6 @@
 # Publishes the catalogue: validates, packs each theme and its wallpaper pack, writes
 # index.json with SHA-256 checksums and attaches everything to a new release.
-# Griha reads https://github.com/sudharamachandranrajeev/griha-themes/releases/latest/download/index.json
+# Griha reads https://github.com/sudharamachandranrajeev/griha-launcher-themes/releases/latest/download/index.json
 name: Release
 
 on:

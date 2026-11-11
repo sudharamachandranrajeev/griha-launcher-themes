@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / "dist"
-REPO = "sudharamachandranrajeev/griha-themes"
+REPO = "sudharamachandranrajeev/griha-launcher-themes"
 STAMP = (1980, 1, 1, 0, 0, 0)  # fixed times make the same files give the same ZIP
 
 

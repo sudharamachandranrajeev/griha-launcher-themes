@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/sudharamachandranrajeev/griha-themes"><img src="branding/griha-themes-512.png" alt="Griha Themes" width="140"></a>
+  <a href="https://github.com/sudharamachandranrajeev/griha-launcher-themes"><img src="branding/griha-themes-512.png" alt="Griha Themes" width="140"></a>
   <br>
   Griha Themes
   <br>
@@ -9,10 +9,10 @@
 <h4 align="center">Downloadable themes for Griha, the calm Android home screen: colours, depth, light, wallpapers and widgets as small data packages.</h4>
 
 <p align="center">
-  <a href="https://github.com/sudharamachandranrajeev/griha-themes/releases"><img src="https://img.shields.io/github/v/release/sudharamachandranrajeev/griha-themes?include_prereleases&color=8a6512&label=catalogue" alt="Latest catalogue"></a>
+  <a href="https://github.com/sudharamachandranrajeev/griha-launcher-themes/releases"><img src="https://img.shields.io/github/v/release/sudharamachandranrajeev/griha-launcher-themes?include_prereleases&color=8a6512&label=catalogue" alt="Latest catalogue"></a>
   <img src="https://img.shields.io/badge/for-Griha%200.6%2B-555" alt="For Griha 0.6 and later">
   <a href="LICENSE"><img src="https://img.shields.io/badge/licence-MIT-2e7d32" alt="Licence MIT"></a>
-  <a href="https://github.com/sudharamachandranrajeev/brahma"><img src="https://img.shields.io/badge/part%20of-Brahma-8a5cf6" alt="Part of Brahma"></a>
+  <a href="https://github.com/sudharamachandranrajeev/brahma-life-suite"><img src="https://img.shields.io/badge/part%20of-Brahma-8a5cf6" alt="Part of Brahma"></a>
 </p>
 
 <p align="center">
@@ -60,7 +60,7 @@ Each theme brings its own home layout as well as its colours; Griha 0.6 builds i
 
 **Use the wallpapers now.**
 
-1. Open the [latest catalogue release](https://github.com/sudharamachandranrajeev/griha-themes/releases/latest) on your phone.
+1. Open the [latest catalogue release](https://github.com/sudharamachandranrajeev/griha-launcher-themes/releases/latest) on your phone.
 2. Download `<theme>-wallpapers.zip`.
 3. In Griha, open **Settings → Look and theme → Wallpapers → Import pictures or ZIP** and pick the file.
 4. Tap the new wallpaper and choose **Griha: home and all apps**.
@@ -129,7 +129,7 @@ Run **Actions → Release → Run workflow** on `main`. It validates, packs ever
 | App | What it does |
 | --- | --- |
 | [griha-home-launcher](https://github.com/sudharamachandranrajeev/griha-home-launcher) | The home screen these themes are for |
-| [brahma](https://github.com/sudharamachandranrajeev/brahma) | The shared core and the all-in-one app |
+| [brahma](https://github.com/sudharamachandranrajeev/brahma-life-suite) | The shared core and the all-in-one app |
 
 ## License
 
